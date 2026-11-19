@@ -1,0 +1,7 @@
+.env
+out/
+assets/
+__pycache__/
+*.log
+state/run.log
+state/errors*.md
