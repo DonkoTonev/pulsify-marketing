@@ -93,3 +93,10 @@ which hooks/formats got the most views, saves, comments; what to do more of / st
 - Nutrition facts must be mainstream and correct; if unsure, leave it out.
 - If posting fails twice, stop and write the error to state/errors.md (the run script emails it).
 - Never post anything that is not about fitness, food, or Pulsify.
+
+## Voice & app language (added 2026-11-19)
+- Bulgarian voiceovers ALTERNATE: bg-BG-BorislavNeural, then bg-BG-KalinaNeural, then Borislav… Check the last
+  voice used in state/log.md and pick the other one. Log the voice used for every video.
+- English (YouTube): en-US-AndrewNeural.
+- Before recording for TikTok/Instagram, switch the Pulsify UI to Bulgarian (the "Език"/language button);
+  for YouTube switch it to English. The test account defaults to English. Note the selector in state/app-map.md.
