@@ -22,4 +22,4 @@ fi
 find out -mindepth 1 -maxdepth 1 -type d -mtime +14 -exec rm -rf {} +
 
 # back up rules + agent memory to GitHub (secrets/media are gitignored)
-git add -A && git commit -qm "agent: $(date +%F)" && git push -q origin main 2>>state/errors.md || true
+git add -A && git commit -qm "agent: $(date +%F)" && (gitleaks git --no-banner -q . && git push -q origin main || echo "$(date) gitleaks or push failed, NOT pushed" >> state/errors.md) || true
