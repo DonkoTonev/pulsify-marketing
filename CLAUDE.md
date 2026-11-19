@@ -100,3 +100,12 @@ which hooks/formats got the most views, saves, comments; what to do more of / st
 - English (YouTube): en-US-AndrewNeural.
 - Before recording for TikTok/Instagram, switch the Pulsify UI to Bulgarian (the "Език"/language button);
   for YouTube switch it to English. The test account defaults to English. Note the selector in state/app-map.md.
+
+## Music (added 2026-11-19) — no silent posts, ever
+- TikTok slideshows: always set the TikTok auto-add-music option to true in the post settings
+  (check the exact field name in state/settings-tiktok.json / `postiz integrations:settings`).
+- EVERY video gets background music (volume 0.12 under a voice, ~0.35 without voice) via "music" in video.json.
+- Music library: assets/music/. If it has fewer than 15 tracks, download free tracks from Pixabay Music
+  (pixabay.com/music — Pixabay Content License, no attribution needed) in moods: upbeat/gym, chill/lofi, motivational.
+  Save as assets/music/<mood>_<n>.mp3 and record title + source URL in state/music.md. Never use commercial/chart songs.
+- Rotate tracks; never the same track twice in a row; match mood to the video (workout → upbeat, recipe → chill).
