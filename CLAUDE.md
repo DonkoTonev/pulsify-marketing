@@ -191,3 +191,21 @@ which hooks/formats got the most views, saves, comments; what to do more of / st
 - Instagram captions: a bit longer, value first, one question at the end, 3-5 niche hashtags, then "Линк в профила 👆".
 - Log TikTok and Instagram topics separately in state/log.md. Do not reuse a topic across platforms in the same week.
 - Limits still apply: max 2 posts per day per platform, no health promises.
+
+## Instagram stories (added 2026-11-22)
+- In every Bulgarian text say "стори" (мн.ч. "сторита"), never "история/истории", when you mean Instagram stories.
+- Stories must be creative, not a plain repost of the feed post:
+  - 2-4 frames per day that tell a mini story: teaser -> reveal -> CTA (e.g. "Колко калории мислиш, че има тук?" -> next frame with the answer from Pulsify -> "Свали Pulsify, линк в профила").
+  - Formats to rotate: guess the calories, this-or-that, myth/fact, behind the scenes of the app, a quick tip, a teaser of today's post.
+  - Vertical 1080x1920, big readable text, keep text out of the top and bottom 250 px (Instagram UI covers them).
+  - Use real app screens and food photos, never fake numbers.
+- Interactive stickers (polls, questions, link sticker) cannot be added via the API; write the question as text instead.
+- Same proofreading and "Пулсифай"-in-voiceover rules apply.
+
+## Evening TikTok run (evening.sh, daily 19:37 Sofia)
+- TikTok only. No Instagram, no YouTube, no stories, no weekly review or research.
+- A second, different video: other topic and format than this morning's TikTok (check state/log.md). Quick formats work well here: "познай калориите", мит или факт, топ 3.
+- All rules above apply: quality rules, creative brief, algorithm playbook, download CTA.
+- Max 2 TikTok posts per day. If today already has 2, do nothing.
+- If the usage limit or an error stops you, log it and stop. Never retry in a loop.
+- Mark it as "evening" in state/log.md, so the Monday review can compare morning and evening posts.
