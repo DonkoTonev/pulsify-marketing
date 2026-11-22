@@ -70,3 +70,43 @@ and reposted compliant; the live feed posts were not re-done.
 - record_app.py: added `ensure_lang`, `dismiss`, `wait_for` steps (see state/app-map.md).
 - Recording caveat: Playwright records video at CSS res (390 wide) in a 780-wide canvas → gray
   padding; crop to 390x844 top-left, upscale+sharpen (rec_crop.mp4) before make_video.
+
+## 2026-11-22 (Sat) — EVENING TikTok: "познай калориите" баница (video)
+
+**Run:** evening (evening.sh, ~20:30 Sofia). TikTok ONLY. This is today's 2nd TikTok post (max 2/day) —
+morning was the shopska APP VIDEO. Different dish (banitsa) + different format (guess-the-calories vs
+morning's confession/POV). No Instagram/YouTube/Stories/review this run. Output: out/2026-11-22-evening/.
+
+**Format:** guess-the-calories video, 4 beats via out/2026-11-22-evening/compose.py →
+(A) real banitsa photo + hook, (B) dark bg + **counting-up calorie counter 0→2660** (motion graphic),
+(C) **real app recording** proof (Pulsify result screen), (D) 4 s download end card. Video variety ✓
+(combines (a) app recording + (c) motion graphics). final.mp4 = **22.1 s**, 1080x1920.
+
+- Hook (on-screen + voice @0.3 s): "Колко калории има тази баница?"
+- Real data (from the app, real AI call on test account, banitsa.jpg): **2660 ккал**, 80 P / 300 C /
+  120 F, 950 g, 280 ккал/100 г. App titled it "печена пита със сирене и билки" (= cheese banitsa).
+  Framed honestly as a WHOLE homemade banitsa (цяла тава, 950 г), not a single piece.
+- On-screen captions: "Колко калории има тази баница?" / "Отговорът:" + counter "2660 ккал" /
+  "цяла тава · 950 г" / "Разпознато от Pulsify за секунди" / end card "Pulsify · Свали безплатно от
+  Google Play".
+- Voice: **bg-BG-KalinaNeural** (alternation: morning=Borislav → tonight Kalina; next BG video →
+  Borislav). "Пулсифай"/"Гугъл Плей" written in Cyrillic for TTS (CLAUDE.md line 134 = "Пулсифай" with
+  у, NOT "Пълсифай" — fixed the memory note that had it wrong). Marked AI audio (video_made_with_ai=true).
+- Music: **assets/music/upbeat_3.mp3** (Komiku "Balance", CC0), 0.12 under voice. Not chill_1/chill_2
+  (morning). Mood: playful/light for a guess game.
+- Caption: "Цяла домашна баница излезе 2660 калории 🤯 И това е за цялата тава, не за едно парче.
+  Познахте ли колко е? / Потърси Pulsify в Google Play 🔍 / #баница #калории #хранене #фитнес
+  #българскахрана"
+- **proofread: ok** (capitals, commas before "не"; "Пулсифай" in all TTS; "Pulsify" kept Latin on-screen
+  + caption). One stylistic lowercase label kept ("цяла тава · 950 г" — a fragment, not a sentence).
+- Algorithm checklist: hook <2 s ✓; keyword "калории/баница" spoken + on-screen + in caption ✓;
+  comment trigger = question "Познахте ли колко е?" ✓; surprising-number share trigger ✓.
+- **TikTok** post id `cmws6cuhm0rk3qq07s5sxjux3` → **PUBLISHED** https://www.tiktok.com/@pulsify8
+  (DIRECT_POST, video_made_with_ai=true, state=PUBLISHED, no error). Verified via posts:list 18:35Z.
+- Experiment: none active (state/experiments.md still does not exist; research runs Sundays).
+- Dish log (30-day no-repeat): shopska (2026-11-22 morning), **баница (2026-11-22 evening)**.
+
+**Tooling added this run (reusable):** make_video.py now has an `end_card` step (logo + download CTA,
+appended via concat_segments, with its own TTS) and a `counter` motion-graphic step (counting-up number);
+captions accept an optional `y`. App-logo asset cropped to assets/brand/pulsify_logo.png (from the
+AI-meal screen). This closes the morning run's "end-card step needs building" TODO.

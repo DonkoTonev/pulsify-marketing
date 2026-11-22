@@ -209,3 +209,33 @@ which hooks/formats got the most views, saves, comments; what to do more of / st
 - Max 2 TikTok posts per day. If today already has 2, do nothing.
 - If the usage limit or an error stops you, log it and stop. Never retry in a loop.
 - Mark it as "evening" in state/log.md, so the Monday review can compare morning and evening posts.
+
+## Video variety (added 2026-11-22)
+- Every video combines at least two of these:
+  - (a) a screen recording of the real app in use (record_app.py / Playwright): scanning a meal, numbers appearing, scrolling the macros;
+  - (b) real food footage from Pexels;
+  - (c) motion graphics made with Python/ffmpeg: a calorie number counting up, captions appearing word by word in sync with the voice, animated comparison bars, zoom/pan on photos.
+- At most 1 plain slideshow video per week.
+- Something must change on screen every 1-2 s (cut, zoom, text) to hold attention.
+- Pexels: use the API with PEXELS_API_KEY from .env and never print or log the key. Search in English (e.g. "banitsa", "moussaka", "salad"). Prefer vertical 1080p clips, 3-6 s each. Skip clips with visible logos or brands. Log every clip's Pexels URL and author in state/credits.md. If there is no key or no good clip, use (a) + (c).
+- No AI-generated people or avatars.
+- Pixabay: if PIXABAY_API_KEY is in .env, use the Pixabay API for food footage the same way as Pexels (never print the key; log clip URL and author in state/credits.md).
+
+## One dish, one number (added 2026-11-22)
+- Get the calories and macros for a dish once (from the app), then use exactly the same numbers in every piece of content about it: TikTok, YouTube, Instagram carousel, stories, captions and voiceover.
+- Record them in state/numbers.md (dish, portion, kcal, protein/carbs/fat, date, source) and reuse them whenever the dish comes up again. If a new measurement differs, say so openly (e.g. a different portion) instead of silently changing it.
+- YouTube descriptions stay in English; translate the words, never the numbers.
+
+## YouTube language (added 2026-11-22, overrides earlier YouTube rules)
+- The YouTube channel is Bulgarian now: titles, descriptions, voiceover and on-screen text, for Shorts and long videos. Numbers stay identical across platforms.
+- An English channel may come later as a separate account. Never mix languages on this one.
+
+## Weekly long YouTube video (longform.sh, Saturdays 00:37 Sofia)
+- One 8-10 min video per week in Bulgarian, horizontal 1920x1080 (720p if the VM is too slow; note it in state/log.md).
+- Topic from this week's best posts (Postiz analytics) and state/numbers.md, e.g. "Колко калории има в 10 български ястия", comparisons, an app walkthrough. Real data only.
+- Structure: hook in the first 15 s (what the viewer will learn), a chapter every 1-2 min, short recap, download CTA once mid-video and at the end.
+- Visuals: app screen recordings, Pixabay food footage, animated charts and tables, captions. Something changes on screen every 3-5 s. No AI avatars or synthetic people (health is a sensitive topic).
+- Voiceover with edge-tts (pronunciation rule applies), music low under the voice.
+- Description: 2-3 sentence summary, chapters with timestamps, full Google Play link, footage and music credits. Custom thumbnail with big readable text.
+- Must be genuinely useful and different every week; YouTube demotes mass-produced, template-like AI videos. If there is not enough real material, skip the week and log why.
+- Upload via Postiz to YouTube as a normal video, not a Short. Max one long video per week.

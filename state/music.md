@@ -36,5 +36,6 @@ https://archive.org/details/Komiku-ItsTimeForAdventureVol2
 - motivational_2.mp3 — 10 "Something to save"
 
 ## Last used (keep updated to enforce no-repeat)
-- 2026-11-22: chill_1 (BG shopska video), chill_2 (EN shopska video).
-  Next video: avoid chill_1/chill_2 back-to-back; for a food/recipe video use chill_3+.
+- 2026-11-22: chill_1 (BG shopska video), chill_2 (EN shopska video),
+  **upbeat_3 (evening banitsa guess-the-calories video)**.
+  Next video: avoid upbeat_3 back-to-back; for a food/recipe video use a chill_* track.
