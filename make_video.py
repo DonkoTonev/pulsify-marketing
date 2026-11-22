@@ -27,6 +27,12 @@ def sh(*a):
     subprocess.run(a, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
 
 
+def probe_dur(path):
+    r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                        "-of", "default=nw=1:nk=1", str(path)], capture_output=True, text=True)
+    return float(r.stdout.strip())
+
+
 def caption_png(text, path):
     img = Image.new("RGBA", (W, 420), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
@@ -77,16 +83,18 @@ def build(spec, out):
         asyncio.run(tts(spec["voice"]["text"], spec["voice"].get("voice", "bg-BG-BorislavNeural"), str(vp)))
         inputs += ["-i", str(vp)]; audio.append(f"[{n}:a]volume=1.0[a{n}]"); n += 1
     if spec.get("music"):
-        inputs += ["-stream_loop", "-1", "-i", spec["music"]]; audio.append(f"[{n}:a]volume=0.12[a{n}]"); n += 1
+        mvol = 0.12 if spec.get("voice") else 0.35  # quiet under a voice, fuller when music-only
+        inputs += ["-stream_loop", "-1", "-i", spec["music"]]; audio.append(f"[{n}:a]volume={mvol}[a{n}]"); n += 1
     amap = []
     if audio:
-        labels = "".join(x.split("]")[-2] + "]" for x in audio)
-        filt += ";".join(audio) + f";{labels}amix=inputs={len(audio)}:duration=first[aout];"
+        labels = "".join("[" + x.rsplit("[", 1)[1] for x in audio)
+        filt += ";".join(audio) + f";{labels}amix=inputs={len(audio)}:duration=longest[aout];"
         amap = ["-map", "[aout]"]
     filt = filt.rstrip(";") or "null"
     vmap = ["-map", last] if last != "[0:v]" else ["-map", "0:v"]
+    dur = probe_dur(base)  # hard-cap output to the visual length (music loops are infinite; -shortest is unreliable with filtergraphs)
     sh("ffmpeg", "-y", *inputs, "-filter_complex", filt if filt != "null" else "[0:v]null[vout]",
-       *(vmap if filt != "null" else ["-map", "[vout]"]), *amap, "-shortest" if audio else "-y",
+       *(vmap if filt != "null" else ["-map", "[vout]"]), *amap, "-t", f"{dur:.3f}",
        "-c:v", "libx264", "-preset", "veryfast", "-crf", "22", "-c:a", "aac", "-movflags", "+faststart", out)
     print(out)
 

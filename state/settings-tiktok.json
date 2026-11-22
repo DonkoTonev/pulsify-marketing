@@ -1,0 +1,25 @@
+{
+  "_integration_id": "cmwnxl34a08eipe07mq710vrc",
+  "_notes": "TikTok Business. Required settings keys: privacy_level, duet, stitch, comment, autoAddMusic, brand_content_toggle, brand_organic_toggle, content_posting_method. Use content_posting_method=DIRECT_POST to actually publish (UPLOAD only drafts to inbox and discards all settings + caption). autoAddMusic applies to PHOTO posts only -> use 'yes' for slideshows to satisfy the no-silent-posts music rule (attaches a random commercial track). For VIDEO posts autoAddMusic/privacy_level are discarded; a video carries its own baked-in bg music from make_video.py. video_made_with_ai=true for videos with AI voice. maxLength 2200.",
+  "defaults_photo_slideshow": {
+    "content_posting_method": "DIRECT_POST",
+    "privacy_level": "PUBLIC_TO_EVERYONE",
+    "duet": false,
+    "stitch": false,
+    "comment": true,
+    "autoAddMusic": "yes",
+    "brand_content_toggle": false,
+    "brand_organic_toggle": false
+  },
+  "defaults_video": {
+    "content_posting_method": "DIRECT_POST",
+    "privacy_level": "PUBLIC_TO_EVERYONE",
+    "duet": false,
+    "stitch": false,
+    "comment": true,
+    "autoAddMusic": "no",
+    "brand_content_toggle": false,
+    "brand_organic_toggle": false,
+    "video_made_with_ai": true
+  }
+}

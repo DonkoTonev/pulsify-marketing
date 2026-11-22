@@ -1,0 +1,10 @@
+{
+  "_integration_id": "cmwnxx71a07fyoa070b7t89w4",
+  "_notes": "YouTube (@pulsifyfit). Required keys: title (<=100 chars), type ('public'|'private'|'unlisted'). Must have a video attachment. English only. made_with_ai=true when realistic AI content (set for AI-voice videos). selfDeclaredMadeForKids='no'. maxLength 5000 (description).",
+  "defaults_short": {
+    "title": "",
+    "type": "public",
+    "selfDeclaredMadeForKids": "no",
+    "made_with_ai": true
+  }
+}

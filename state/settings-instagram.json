@@ -1,0 +1,14 @@
+{
+  "_integration_id": "cmwnxuci507eloa07i247rzc3",
+  "_notes": "Instagram standalone (@pulsifyfit). Only required key: post_type ('post' or 'story'). A carousel/reel is post_type='post' with multiple/one attachment. A Story is post_type='story' with exactly ONE picture (1080x1920). made_with_ai=true when content was AI-generated (set it for AI-voice videos). maxLength 2200.",
+  "defaults_post": {
+    "post_type": "post"
+  },
+  "defaults_story": {
+    "post_type": "story"
+  },
+  "defaults_video_reel": {
+    "post_type": "post",
+    "made_with_ai": true
+  }
+}

@@ -27,3 +27,33 @@ Nav via `get_by_text("<label>")` / `click_text`.
 
 > UI is in **English** on the test account regardless of `locale=bg-BG`. Use `click_text` with the
 > English labels above. Re-verify labels with a screenshot before relying on new ones.
+
+## Language switch (added 2026-11-22)
+Header button `button[title="Language"]` toggles EN<->BG. It shows the language you'd switch TO:
+label "BG" => UI is currently English (click to get Bulgarian); label "EN" => already Bulgarian.
+It lives in the desktop sidebar header and is **outside the 390x844 mobile viewport**, so a normal
+Playwright click fails ("element is outside of the viewport"). Click it via JS:
+`pg.eval_on_selector("button[title=Language]", "e=>e.click()")`.
+record_app.py now has a step for this: `{"do":"ensure_lang","lang":"bg"}` (or "en") — idempotent,
+only clicks when the button offers the wanted language. The whole UI (nav, forms, results) localizes.
+Theme toggle is a sibling `button.theme-toggle` ("Light theme"/"Светла тема") — don't confuse them.
+
+## Upsell modal (added 2026-11-22)
+After login (on /daily) a Pro upsell modal can appear ("See what Pro includes" / "Not now",
+`button.upsell-close`, `.upsell-later`). It intercepts clicks. record_app.py step `{"do":"dismiss"}`
+JS-clicks the close controls (no-op if absent). Navigating straight to /ai-meal usually avoids it.
+
+## AI Meal Analysis — the photo-a-meal feature (added 2026-11-22)
+Route: **/ai-meal** (sidebar "AI Meal Analysis" / "AI Анализ на ястие"). Flow:
+1. Two hidden `input[type=file]` (accept=image/*). Upload directly: `input[type=file]` .first +
+   set_input_files — no need to click "From Gallery"/"🖼️ От галерия". Buttons: "📷 Take Photo",
+   "🖼️ From Gallery", "🎥 Live scan".
+2. After a file is set, a form appears: dish name (optional, placeholder suggests "шопска салата"),
+   "How was it prepared?" chips (air fryer/oven/pan/deep-fried/boiled/grill...), approx weight (optional),
+   and an **"Анализирай"** / "Analyze" button. click_text "Анализирай" to run.
+3. Analysis takes ~10-40s (real AI call on the test account). Wait for result with
+   `{"do":"wait_for","text":"Разпознати храни","timeout":90000}` (EN: "Recognized foods").
+4. Result renders below the photo: title (e.g. "🍲 Шопска салата"), description, "N храни ·
+   Точност на оценката: висока (NN%)", big macro cards (ккал / Протеин / Въглех. / Мазнини), then a
+   per-ingredient breakdown, "+ Добави съставка", "Запази в дневника". Scroll down to reveal macros.
+   New step `{"do":"wait_for",...}` added to record_app.py for AI latency.

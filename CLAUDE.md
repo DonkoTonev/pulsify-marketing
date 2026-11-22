@@ -127,3 +127,53 @@ which hooks/formats got the most views, saves, comments; what to do more of / st
 ### Monday review
 - For each of last week's experiments, compare its posts with the rest using Postiz analytics. Clear winner: fold it into the strategy in this file. Loser or unclear: drop it. Log the verdict in state/insights.md.
 - Never edit the hard rules (health claims, posting limits, Reddit) during a review.
+
+## Quality rules (added 2026-11-22, apply to every post)
+
+### 1. Voiceover pronunciation
+- The Bulgarian TTS voice spells Latin words letter by letter. In any text that goes to TTS / voiceover, write the app name in Cyrillic as "Пълсифай", never "Pulsify".
+- Same for any other Latin word in a voiceover: write it phonetically in Cyrillic, or avoid it.
+- On-screen text, captions and hashtags keep the real name "Pulsify".
+- Do this as a final replace step on the voiceover script right before calling TTS, so it never slips through.
+
+### 2. Spelling and punctuation
+- Casual tone is fine, errors are not. Every caption, slide text and voiceover must be correct Bulgarian.
+- Start sentences with a capital letter. Put commas where Bulgarian grammar needs them (before "че", "защото", "който", "но", "а"; around inserted words like "честно", "между другото"; between clauses).
+- Before publishing, do a separate proofreading pass over all texts of the post: re-read them only for spelling, punctuation, agreement and typos, and fix them. Note "proofread: ok" in state/log.md.
+- Example: "не очаквах шопската да излезе 663 калории честно 😅" -> "Не очаквах шопската да излезе 663 калории, честно 😅".
+
+### 3. Link to the app
+- Links in TikTok and Instagram captions are not clickable, so there end the caption with a short CTA such as "Линк в профила 👆" instead of a raw URL.
+- On YouTube Shorts put the full Google Play link (from this file) in the description.
+- Never shorten links with third-party shorteners.
+
+### 3b. Download CTA per platform (overrides 3)
+- TikTok: this account has no clickable bio link yet, so end the caption with "Потърси Pulsify в Google Play 🔍".
+- Instagram: end the caption with "Линк в профила 👆".
+- YouTube Shorts: full Google Play link in the description.
+- Every video ends with a 2-3 s end card: app logo + "Свали безплатно от Google Play". Voiceover on it: "Свали Пълсифай безплатно от Гугъл Плей".
+
+## Creative brief (added 2026-11-22)
+
+### Length and structure
+- Videos 20-35 s. Hook in the first 1-2 s (text on screen + voice), payoff in the middle, end card with the download CTA.
+- One idea per video. If the hook does not make you curious, rewrite it before rendering.
+
+### Weekly series (rotate, so viewers know what to expect)
+- Mon, Thu: "Колко калории има в..." - a Bulgarian dish or street food (баница, мусака, дюнер, кебапчета, боза, айрян с баница, пица от квартала). Guess first, then the real number from Pulsify.
+- Tue: "Мит или факт" - a popular food belief, answered calmly with common-sense facts.
+- Wed: "Сравнение" - two foods side by side, which one has more calories/protein.
+- Fri: "Функция" - one Pulsify feature shown on real app screens (scan, macros, languages, coach).
+- Sat, Sun: free choice, preferably from state/experiments.md.
+
+### Make it creative
+- Local and specific beats generic: Bulgarian food, places, situations, humor ("след сватба", "на морето", "в офиса").
+- Use timely hooks: holidays and seasons (Коледа, Нова година, Великден, лято/море), with their typical foods.
+- Vary the format: POV, "познай калориите", топ 3, before/after, reaction-style text. Never use the same format 3 days in a row; check state/log.md.
+- Vary hook styles: question, surprising number, confession ("не очаквах..."), challenge, mistake people make.
+- Avoid clichés ("Знаете ли, че...", "В днешното видео...") and empty hype.
+- Keep a list of used dishes/topics in state/log.md and do not repeat a dish within 30 days.
+
+### Limits (never break)
+- No health or weight-loss promises, no medical advice, no shaming of bodies or food.
+- Numbers must come from the app or a reliable source, never invented.

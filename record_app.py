@@ -63,6 +63,28 @@ def run(scenario, out):
                     raise SystemExit("login failed — see login_failed.png")
             elif d == "goto":
                 pg.goto(s["url"], wait_until="networkidle")
+            elif d == "ensure_lang":
+                # Header language button (title="Language") shows the OTHER language as its
+                # label (the one you'd switch TO). It sits outside the mobile viewport, so
+                # click it via JS. Only click when it offers the language we want.
+                want = s.get("lang", "bg").upper()
+                lb = pg.locator("button[title=Language]")
+                if lb.count():
+                    label = (lb.first.inner_text() or "").strip().upper()
+                    if label == want:
+                        pg.eval_on_selector("button[title=Language]", "e => e.click()")
+                        pg.wait_for_timeout(1500)
+            elif d == "dismiss":
+                # JS-click any known upsell/modal close control; no-op if none present.
+                pg.evaluate("""() => {
+                    for (const sel of ['button.upsell-close', '.upsell-later',
+                                       'button[aria-label=Close]', '.modal-close']) {
+                        const el = document.querySelector(sel); if (el) el.click();
+                    }
+                }""")
+            elif d == "wait_for":
+                pg.get_by_text(s["text"], exact=s.get("exact", False)).first.wait_for(
+                    state="visible", timeout=s.get("timeout", 60000))
             elif d == "click_text":
                 pg.get_by_text(s["text"], exact=s.get("exact", False)).first.click()
             elif d == "click":

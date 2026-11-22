@@ -1,0 +1,20 @@
+{
+  "tiktok": {
+    "id": "cmwnxl34a08eipe07mq710vrc",
+    "name": "Pulsify",
+    "identifier": "tiktok-business",
+    "profile": "pulsify8"
+  },
+  "instagram": {
+    "id": "cmwnxuci507eloa07i247rzc3",
+    "name": "Pulsify App",
+    "identifier": "instagram-standalone",
+    "profile": "pulsifyfit"
+  },
+  "youtube": {
+    "id": "cmwnxx71a07fyoa070b7t89w4",
+    "name": "Pulsify App",
+    "identifier": "youtube",
+    "profile": "@pulsifyfit"
+  }
+}
