@@ -131,7 +131,7 @@ which hooks/formats got the most views, saves, comments; what to do more of / st
 ## Quality rules (added 2026-11-22, apply to every post)
 
 ### 1. Voiceover pronunciation
-- The Bulgarian TTS voice spells Latin words letter by letter. In any text that goes to TTS / voiceover, write the app name in Cyrillic as "Пълсифай", never "Pulsify".
+- The Bulgarian TTS voice spells Latin words letter by letter. In any text that goes to TTS / voiceover, write the app name in Cyrillic as "Пулсифай", never "Pulsify".
 - Same for any other Latin word in a voiceover: write it phonetically in Cyrillic, or avoid it.
 - On-screen text, captions and hashtags keep the real name "Pulsify".
 - Do this as a final replace step on the voiceover script right before calling TTS, so it never slips through.
@@ -151,7 +151,7 @@ which hooks/formats got the most views, saves, comments; what to do more of / st
 - TikTok: this account has no clickable bio link yet, so end the caption with "Потърси Pulsify в Google Play 🔍".
 - Instagram: end the caption with "Линк в профила 👆".
 - YouTube Shorts: full Google Play link in the description.
-- Every video ends with a 2-3 s end card: app logo + "Свали безплатно от Google Play". Voiceover on it: "Свали Пълсифай безплатно от Гугъл Плей".
+- Every video ends with a 2-3 s end card: app logo + "Свали безплатно от Google Play". Voiceover on it: "Свали Пулсифай безплатно от Гугъл Плей".
 
 ## Creative brief (added 2026-11-22)
 
@@ -177,3 +177,17 @@ which hooks/formats got the most views, saves, comments; what to do more of / st
 ### Limits (never break)
 - No health or weight-loss promises, no medical advice, no shaming of bodies or food.
 - Numbers must come from the app or a reliable source, never invented.
+
+## Algorithm playbook (added 2026-11-22)
+- state/algorithm.md is what we know about how TikTok, Reels and Shorts rank videos. Read it at the start of every daily run and apply it.
+- Before rendering, check the post: hook within 2 s, keyword spoken + shown + in caption, a share/save or comment trigger, ending that invites a replay. Log this checklist in state/log.md.
+- Weekly research: update state/algorithm.md with new, confirmed changes (with source and date); mark vendor claims as unconfirmed.
+- Monday review: compare completion rate, average watch time and shares per post from Postiz analytics, and write what our data shows under "Our data". Our data wins over web claims.
+
+## Platform split (added 2026-11-22)
+- TikTok and YouTube Shorts: the daily series video (the same file for both).
+- Instagram gets its own content every day, never the TikTok video: an Instagram carousel (5-7 slides, 1080x1350) on a different topic than that day's TikTok. Saveable lists and numbers, e.g. "5 закуски под 400 калории". First slide is the hook, last slide is the download CTA.
+- If Postiz cannot post a carousel, post a single image with the key slide instead and note it in state/errors.md.
+- Instagram captions: a bit longer, value first, one question at the end, 3-5 niche hashtags, then "Линк в профила 👆".
+- Log TikTok and Instagram topics separately in state/log.md. Do not reuse a topic across platforms in the same week.
+- Limits still apply: max 2 posts per day per platform, no health promises.
