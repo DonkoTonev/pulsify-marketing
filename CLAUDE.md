@@ -187,3 +187,9 @@ Your goal: grow an audience that trusts Pulsify, then turn some of it into app d
 - Hook text speaks to the viewer's own life and creates a gap they must close: "Твоята закуска вероятно е по-калорична от обяда ти", "Това правиш грешно всеки ден", "3 сек: познай кое е по-калорично". No hook about the app or about us.
 - Rotate 4 hook types and log which one each video used: (1) contrast/surprise, (2) mistake ("спри да..."), (3) challenge/guess, (4) callout ("ако ядеш X, гледай това"). The Monday review keeps the type with the best 3-second retention.
 - Owner footage in inbox/ beats stock for frame 0 whenever available.
+
+## 18. Headless runs (added 2026-11-23, critical)
+- You run headless (`claude -p`). The session ENDS the moment you stop and wait. On 2026-11-23 the evening run started the render in the background, said "I'll wait for the render monitor to notify me", ended, and nothing was published.
+- Never start renders or other long jobs in the background and wait for a notification or monitor. Run them in the foreground with `timeout` (each command under 9 minutes). If a job takes longer, start it with nohup and then poll it yourself in the same turn with foreground loops such as `for i in $(seq 1 16); do pgrep -f ffmpeg >/dev/null || break; sleep 30; done`, repeating until it is done.
+- Do not end the run until every planned post is published (or logged as skipped with a reason), state/log.md is updated, and you have printed a short summary. Never ask questions at the end; nobody will answer.
+- Links: never shortened. If Postiz offers to shorten links (for example a shortLink option), turn it off and post the full Google Play URL.

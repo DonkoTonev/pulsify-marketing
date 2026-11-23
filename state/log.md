@@ -1,5 +1,79 @@
 # Post log
 
+## 2026-11-23 (Mon) — EVENING TikTok (educational): "Мит или факт — вечерята не те качва"
+
+**Run:** evening (evening.sh, ~21:00 Sofia). TikTok ONLY (no IG/YouTube/stories/review). This is today's
+**2nd** TikTok (max 2/day) — morning was the app-integrated döner vs cheeseburger face-off. Different
+topic (meal-timing myth, no food calorie number) AND different format (educational "Мит или факт" vs
+the morning app two-food face-off). Output: out/2026-11-23-evening/.
+
+**Context / recovery:** an earlier evening attempt (~17:4x) had fetched Pixabay b-roll + SFX and a
+half-written compose but never rendered/published (the §18 background-wait trap from the file header; it
+was also a 31.5 s cut that broke §16). This run REUSED the fetched assets but **rebuilt** the compose to
+§16: a tight **16.0 s** cut with the payoff stamped at the very end and a seamless loop. Nothing double-
+posted (verified only 1 TikTok existed today before this run).
+
+**Premise step (§10.1):** 10 educational-myth candidates scored; winner "Не, вечерята не те качва"
+(late-eating / „не яж след 18:00" myth), ~8.3 — highly relatable to the common Bulgarian 18:00 rule,
+claim-lead/belief-challenge (our day-1 winning pattern), creates a gap. Beats #3,#8 (soft/hedged
+variants) killed per the 10.1 kill list.
+
+**Format / beats (no app, no CTA, no QR, no end card — educational §4):**
+A HOOK 3.0 s (fork into a salmon salad, close-up in motion) + "Не, вечерята не те качва" ->
+B 3.0 s (slicing mushroom) "„Не яж след 18:00" е мит" + series tag "Мит или факт" (appears only AFTER
+3 s, §17) + impact SFX -> C 3.3 s (person on a sofa in the evening) open loop "Тогава какво те качва?"
+-> D 3.2 s (food prep) "Вечер дояждаш, без да усетиш" -> E 3.5 s ФАКТ card (ding SFX) "Важно е общото
+за деня, не часът" + "Запази си го", looping back into A. Built via out/2026-11-23-evening/
+compose_evening.py (one ffmpeg pass per segment + concat stream-copy — the only way it finishes on the
+2-core/<1 GB VM; the old multi-pass version timed out). final.mp4 = **16.0 s**, 1080x1920.
+
+**Hook (frame 0, on-screen):** "Не, вечерята не те качва". Hook type (§17) = **1 (contrast/surprise,
+belief-challenge)** — rotates off the morning's type 3 (challenge/guess).
+
+**Voice:** **NONE** (no-voice: big captions + music + 2 SFX). Alternation: morning had voice (Borislav),
+so evening is voiceless — gives the Monday review a voice-vs-no-voice read within TikTok. Because there
+is no AI voice and no AI-generated realistic content, set **video_made_with_ai=false** (honest; the morning
+app videos were true because of the AI voiceover).
+
+**Music:** **assets/music/chill_3.mp3** (CalmPills "Absolvo", CC0), 0.35 (no voice). Not upbeat_1
+(morning). SFX: impact on "е мит", ding on the ФАКТ reveal (short synthesized tones, see credits.md).
+
+**Pixabay b-roll (credits.md):** 227128 kurt_BID (salad hook), 141853 Amina_Salim (mushroom),
+43459 Nicolas_Garay (sofa, atmosphere only — NOT a testimonial), 254753 xBriantcx (dough). The rest of
+the fetch was mislabeled junk (camel, moonlit sea, NO-SIGNAL card, street, yoga) — vetted out.
+
+**Accuracy (§5):** claim = meal *timing/clock* itself is not what makes you gain; total daily intake is,
+and late eating usually adds extra snacks on top. Checked via web search against controlled-trial
+evidence (matched-calorie RCTs show little timing effect; late-eating→weight-gain link is driven by
+higher total intake). No personal calorie target, no weight-loss promise, no body shaming. **Източник in
+caption:** научен преглед за времето на хранене (PMC 9010393, 2022), https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9010393/
+
+**Quality gate (§10.5 / §16):** dur 16.0 s ✓ (12-20 s). First-2 s = appetizing salmon-salad close-up in
+motion + claim-lead text, no app/logo/letterbox/black ✓. Contact sheet: motion every ~1.5 s, no app
+(educational), no end card/QR, ФАКТ reveal only in the last beat ✓. One fix: the 🔖 emoji rendered as a
+tofu box (DejaVu lacks it) -> removed, re-rendered. Scores **H8 / C8 / Surprise7 / Pace7 / Share7 /
+Prod8 = avg 7.5, hook 8 -> PASS.** Weakest = the sofa beat (slightly overexposed/slow) but it carries the
+open-loop question. **proofread: ok** (capitals; „…" curly quotes; comma before "а"/"без"; "Pulsify" not
+used on-screen since educational).
+
+**Caption (TikTok, educational — no app CTA, §11.3 / §15 N/A for educational):**
+"Мит или факт: „Не яж след 18:00". / Часът сам по себе си не те качва. Значение има колко изяждаш за
+целия ден, а вечер лесно дояждаш, без да усетиш. / Ти спазваш ли правилото за 18:00? Пиши „да" или „не" 👇
+/ Източник: научен преглед за времето на хранене (PMC, 2022). / #хранене #калории #митилифакт #вечеря
+#фитнес". (Concrete да/не comment prompt, per the insights.md note to make comment-bait specific.)
+
+**Experiment:** none active (state/experiments.md still absent — research.sh hasn't run).
+
+**Publish:** uploaded final.mp4 -> https://uploads.postiz.com/ey11JfkOvM.mp4. **TikTok** post id
+**`cmwtn2rw005qgmf08wpgdskxa`**, --shortLink false (§18). **PUBLISHED 19:12:09Z** ->
+https://www.tiktok.com/@pulsify8 (releaseId v_pub_url~v2.7711446660664051745, no error). Verified via
+posts:list. Today's TikTok count: **2/2** (morning döner app + this evening myth).
+
+**Dish/topic log (30-day no-repeat):** meal-timing / „не яж след 18:00" myth (NEW, 2026-11-23 eve). No
+dish calorie number used (myth-bust, not a dish video).
+
+---
+
 ## 2026-11-23 (Mon) — MONDAY REVIEW + DAILY RUN
 
 ### Monday weekly review (section 12) — FIRST review

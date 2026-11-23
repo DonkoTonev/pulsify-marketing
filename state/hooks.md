@@ -23,3 +23,9 @@ web claims are secondary.
 |---|---|---|---|---|---|
 | 2026-11-22 | TikTok morning (app) | "мислиш шопската е лека?" | shopska salad close-up | logged ~8 avg | 588 views, 4 likes |
 | 2026-11-22 | TikTok evening (edu) | "Колко калории има тази баница?" | whole banitsa close-up | logged ~8 avg | 175 views, 2 likes |
+| 2026-11-23 | TikTok morning (app) | "Дюнер или чийзбургер?" / "Кое е по-калорично?" | döner+burger split + VS | 8/9/7/7/8/8 | (pending) |
+| 2026-11-23 | TikTok evening (edu) | "Не, вечерята не те качва" | fork into a salmon salad, close-up in motion | 8/8/7/7/7/8 | (pending) |
+
+Hook-type rotation (§17): 2026-11-23 morning = type 3 (challenge/guess); 2026-11-23 evening =
+type 1 (contrast/surprise, belief-challenge "Не, ... не те качва"). Keep alternating; the Monday
+review keeps whichever type holds 3-second retention best.

@@ -39,4 +39,5 @@ https://archive.org/details/Komiku-ItsTimeForAdventureVol2
 - 2026-11-22: chill_1 (BG shopska video), chill_2 (EN shopska video),
   upbeat_3 (evening banitsa guess-the-calories video).
 - 2026-11-23: **upbeat_1 (Komiku "Battle Theme") — morning döner vs cheeseburger face-off.**
-  Next video: avoid upbeat_1 back-to-back; for a calm/food topic use a chill_* track.
+- 2026-11-23 evening: **chill_3 (CalmPills "Absolvo") — "Мит или факт: вечерята не те качва" (no-voice, 0.35).**
+  Next video: avoid chill_3 back-to-back; morning used upbeat_1, so a different track either way.
