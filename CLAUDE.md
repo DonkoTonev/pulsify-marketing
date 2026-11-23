@@ -159,3 +159,31 @@ Your goal: grow an audience that trusts Pulsify, then turn some of it into app d
 - Never post anything that is not about food, nutrition, training, healthy habits or Pulsify.
 - Reddit is never automated.
 - Never print, log or post keys, passwords or tokens from .env.
+
+## 14. Analytics screenshots (added 2026-11-23)
+- The owner may upload screenshots from TikTok Studio (Overview, Retention), Instagram Insights and YouTube Studio to inbox/analytics/.
+- In the Monday review, open every new screenshot (Read tool), extract the numbers (views, average watch time, % still watching at 1 s and 3 s, completion, shares, saves, follows) and add them per post to state/insights.md and the "Our data" part of state/algorithm.md.
+- Then move the screenshots to inbox/analytics/used/. Never post or share them.
+
+## 15. TikTok -> Instagram cross-promotion (added 2026-11-23)
+- Instagram @pulsifyfit has a clickable Google Play link in its bio; TikTok does not yet. So in about 1 of 3 TikTok posts, end the caption with "Линкът към приложението е в Instagram @pulsifyfit 👆" instead of the usual TikTok CTA.
+- Only in the caption, never as on-screen text or voice, and never in the first 3 s. Do not do it in two posts in a row.
+- Log which posts had it; the Monday review checks whether those posts got less reach. If they do, stop.
+
+## 16. TikTok completion rate (added 2026-11-23, overrides lengths and end card for TikTok)
+- Problem: fewer than 5% watch our TikToks to the end. Completion is a percentage, so shorter, tighter videos with the payoff at the very end win.
+- TikTok length: 12-20 s (YouTube Shorts may stay up to 30 s; Instagram as before).
+- Structure: hook (0-1.5 s) -> fast build-up with an open loop -> the reveal or punchline in the LAST 1-2 s. Never reveal the answer early. Cut the "stakes" beat if it slows things down.
+- No end card on TikTok: the end card is where people leave. Put the download CTA in the caption, plus at most a small overlay during the final reveal. The QR end card stays for YouTube Shorts and Instagram app posts.
+- Seamless loop: the last frame and last words lead straight back into the first ("...и затова никога не яж баница така" -> first frame), so a replay feels natural; replays raise watch time.
+- Pace: one idea per 1.5-2 s, no sentence longer than about 2 s on screen, no pauses, no slow zooms longer than 1.5 s.
+- Quality gate for TikTok adds: "Is there any second where I would swipe?" If yes, cut it. Prefer cutting over adding.
+- Log length and completion per video; the Monday review checks whether completion improved and adjusts the length range.
+
+## 17. Opening fixes v2 (added 2026-11-23, viewers still leave in the first seconds)
+- Full-bleed only in the first 3 s: no letterbox or dark bands, no phone mockups, no picture-in-picture, no brand colours or frames. It must look like a normal TikTok filmed on a phone, not like an ad.
+- Captions in native TikTok style: white bold sans-serif with a black outline, centred, 2-5 words per line.
+- Frame 0 shows the subject of the hook itself (the actual food or situation the text talks about), close and in motion. Generic stock shots (a random smiling person, a vague kitchen) are not allowed as frame 0.
+- Hook text speaks to the viewer's own life and creates a gap they must close: "Твоята закуска вероятно е по-калорична от обяда ти", "Това правиш грешно всеки ден", "3 сек: познай кое е по-калорично". No hook about the app or about us.
+- Rotate 4 hook types and log which one each video used: (1) contrast/surprise, (2) mistake ("спри да..."), (3) challenge/guess, (4) callout ("ако ядеш X, гледай това"). The Monday review keeps the type with the best 3-second retention.
+- Owner footage in inbox/ beats stock for frame 0 whenever available.
