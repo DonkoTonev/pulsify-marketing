@@ -37,5 +37,6 @@ https://archive.org/details/Komiku-ItsTimeForAdventureVol2
 
 ## Last used (keep updated to enforce no-repeat)
 - 2026-11-22: chill_1 (BG shopska video), chill_2 (EN shopska video),
-  **upbeat_3 (evening banitsa guess-the-calories video)**.
-  Next video: avoid upbeat_3 back-to-back; for a food/recipe video use a chill_* track.
+  upbeat_3 (evening banitsa guess-the-calories video).
+- 2026-11-23: **upbeat_1 (Komiku "Battle Theme") — morning döner vs cheeseburger face-off.**
+  Next video: avoid upbeat_1 back-to-back; for a calm/food topic use a chill_* track.

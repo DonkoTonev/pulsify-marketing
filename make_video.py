@@ -60,27 +60,54 @@ def counter_png(text, path, size=150):
     img.save(path)
 
 
+PLAY_URL = "https://play.google.com/store/apps/details?id=com.apex.fitness"
+
+
+def _qr_image(url, px=360):
+    """White-bordered QR of the Play link so it scans off a phone screen."""
+    import qrcode
+    qr = qrcode.QRCode(border=2, box_size=10,
+                       error_correction=qrcode.constants.ERROR_CORRECT_M)
+    qr.add_data(url); qr.make(fit=True)
+    code = qr.make_image(fill_color="black", back_color="white").convert("RGB").resize((px, px))
+    pad = 24
+    card = Image.new("RGB", (px + 2 * pad, px + 2 * pad), "white")
+    card.paste(code, (pad, pad))
+    return card
+
+
 def render_end_card(ec, path):
-    """2-3 s download card: Pulsify logo + 'Свали безплатно от Google Play' on a dark gradient."""
+    """2-3 s download card: Pulsify logo + 'Свали безплатно от Google Play' + a scannable
+    QR to the Play link ('Задръж Home и огради кода') on a dark gradient (app-integrated only)."""
     img = bg_gradient()
     d = ImageDraw.Draw(img)
     logo_path = ec.get("logo", "assets/brand/pulsify_logo.png")
     if Path(logo_path).exists():
-        size = 300
+        size = 230
         lg = Image.open(logo_path).convert("RGB").resize((size, size))
         mask = Image.new("L", (size, size), 0)
-        ImageDraw.Draw(mask).rounded_rectangle((0, 0, size, size), 66, fill=255)
-        img.paste(lg, ((W - size) // 2, 540), mask)
+        ImageDraw.Draw(mask).rounded_rectangle((0, 0, size, size), 50, fill=255)
+        img.paste(lg, ((W - size) // 2, 360), mask)
     name = ec.get("name", "Pulsify")
-    fn = font(118)
-    d.text(((W - d.textlength(name, font=fn)) / 2, 880), name, font=fn,
+    fn = font(112)
+    d.text(((W - d.textlength(name, font=fn)) / 2, 630), name, font=fn,
            fill="white", stroke_width=3, stroke_fill="black")
     l1, l2 = ec.get("line1", "Свали безплатно от"), ec.get("line2", "Google Play")
-    f1, f2 = font(62), font(86)
-    d.text(((W - d.textlength(l1, font=f1)) / 2, 1130), l1, font=f1,
+    f1, f2 = font(58), font(82)
+    d.text(((W - d.textlength(l1, font=f1)) / 2, 800), l1, font=f1,
            fill=(222, 232, 236), stroke_width=4, stroke_fill="black")
-    d.text(((W - d.textlength(l2, font=f2)) / 2, 1225), l2, font=f2,
+    d.text(((W - d.textlength(l2, font=f2)) / 2, 888), l2, font=f2,
            fill=ACCENT, stroke_width=5, stroke_fill="black")
+    # QR to the Play link
+    qr = _qr_image(ec.get("url", PLAY_URL), px=360)
+    qx, qy = (W - qr.width) // 2, 1040
+    mask = Image.new("L", qr.size, 0)
+    ImageDraw.Draw(mask).rounded_rectangle((0, 0, *qr.size), 28, fill=255)
+    img.paste(qr, (qx, qy), mask)
+    hint = ec.get("hint", "Задръж Home и огради кода")
+    fh = font(46)
+    d.text(((W - d.textlength(hint, font=fh)) / 2, qy + qr.height + 40), hint, font=fh,
+           fill=(222, 232, 236), stroke_width=4, stroke_fill="black")
     img.save(path)
 
 

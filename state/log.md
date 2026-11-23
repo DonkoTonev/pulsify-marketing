@@ -1,5 +1,88 @@
 # Post log
 
+## 2026-11-23 (Mon) — MONDAY REVIEW + DAILY RUN
+
+### Monday weekly review (section 12) — FIRST review
+- Pulled `postiz analytics:platform` (3 channels) + `analytics:post` (4 posts). All 6 Nov-22 posts
+  are PUBLISHED, no errors (YouTube EN short + 2 stories confirmed live).
+- Day-1 numbers (posts ~1 day old): TikTok 763 views total (shopska morning app 588 / banitsa
+  evening 175), 7 likes, 0 comments/shares. IG reel 19 views / 17 reach / 0 saves. YT-EN 41 views.
+- Conclusions written to state/insights.md; algorithm.md "Our data" updated; hooks.md seeded.
+  Key reads (all weak — 1 day): TikTok is the only real reach; claim-lead hook (shopska 588) beat the
+  soft "Колко калории има в..." opener (banitsa 175, matches the 10.1 kill list); 0 comments/shares
+  everywhere. **API limitation:** postiz exposes only views/likes/comments/shares (+reach/saves IG),
+  NO retention/watch-time/completion. No experiments were active -> nothing to fold/drop.
+- Housekeeping found two missing state files and created them: **state/numbers.md** (backfilled
+  shopska + banitsa from the logs) and later added döner + cheeseburger; experiments.md still absent
+  (research.sh hasn't run — the Nov-22 "first run" was actually a Sunday setup run; the log mislabeled
+  Nov-22 as "Sat" — Nov 22 2026 was a SUNDAY, Nov 23 is Monday).
+
+### Daily run — Monday = app-integrated morning TikTok + YouTube Short + IG carousel + stories
+
+**MORNING TikTok (app-integrated) — "Кое има повече калории?": Дюнер vs Чийзбургер**
+- Premise step: 10 two-food face-offs scored; winner "Дюнер vs Чийзбургер" (8.3). Twist discovered
+  from the real scan.
+- Real data: **Дюнер = 653 ккал, 44.3 P / 52.7 C / 27.0 F, 340 г** (REAL Pulsify scan, test acct,
+  accuracy 86%, tortilla+beef+salad). **Голям чийзбургер ≈ 535 ккал / ~200 г** (reliable source,
+  USDA "single large patty with condiments" — the daily free AI-scan limit was hit after the döner,
+  so the burger used a cited reference, flagged on-screen + in caption). Both in state/numbers.md.
+- Format: hero split (döner/burger + VS) -> real Pulsify döner result (653) shown once at ~7 s
+  (after 3 s ✓, ~1/3 in) -> burger counter 0→535 -> comparison card "Дюнерът НЕ е по-леката опция"
+  (653 vs 535, sources shown) -> QR end card. Built via out/2026-11-23/compose.py (segments + lay
+  continuous music over the whole thing). final.mp4 = **26.3 s**, 1080x1920.
+- Hook (frame 0, on-screen + voice): "Дюнер или чийзбургер?" / "Кое е по-калорично?"
+- Voice: **bg-BG-BorislavNeural** (alternation: Nov-22 eve = Kalina -> today Borislav; next BG -> Kalina).
+  "Пулсифай"/"Гугъл Плей" + numbers written as Bulgarian words for TTS. Marked AI audio.
+- Music: **assets/music/upbeat_1.mp3** (Komiku "Battle Theme", CC0), 0.12 under voice, continuous
+  (not per-segment). Not upbeat_3 (last used). Thematic "battle" for a face-off.
+- Photos: Pixabay doner (angelorosa) + cheeseburger (RitaE, cropped) — credits in state/credits.md.
+- Quality gate: first-2s = two appetizing foods + VS + hook, no app/logo/black ✓. Contact sheet: app
+  once (~7 s), QR end card present, numbers match numbers.md. Scores H8/C9/Surprise7/Pace7/Share8/
+  Prod8 = avg 7.8, hook 8 -> PASS. Weakest = pace (7 s intro a touch long; next time animate the
+  countdown / shorten). **proofread: ok** (comma before "че"/"а"; "Pulsify" Latin on-screen+caption).
+- Caption (TikTok): "Мислиш, че дюнерът е по-леката опция от чийзбургер? Един дюнер е 653 ккал, а
+  голям чийзбургер — 535. Ти кое избра? 😅 / Дюнерът е реален скан, бургерът е по USDA. / Потърси
+  Pulsify в Google Play 🔍 / #дюнер #чийзбургер #калории #хранене #фитнес"
+- Источник: USDA FoodData Central (cheeseburger). Döner number = real scan.
+- **TikTok** post id `cmwsy17hz051vqs07sqtqzt7q` (DIRECT_POST, video_made_with_ai=true), sched 07:29:40Z.
+
+**YouTube Short — same BG video file (NOT a separate EN version).**
+- CLAUDE.md §2/§3 say YouTube is Bulgarian + uses the morning TikTok file. (settings-youtube.json's
+  "English only" note is stale from the Nov-22 run; CLAUDE.md overrides — did NOT make an EN version.)
+- Title: "Дюнер или чийзбургер — кое има повече калории?" Description has the full Play link + Pixabay/
+  Komiku credits. made_with_ai=true. **YouTube** first attempt `cmwsy1gx00528qs07urcc6csl` **FAILED:
+  "daily upload quota is exhausted for today"** (new channel, low daily cap). Deleted it and
+  **rescheduled** the same BG short for **2026-11-23T10:00:00Z**, new id `cmwsy6xho04w6kc07gmqd6k8c`
+  (past the ~08:00 UTC quota reset). Logged in state/errors.md; verify after 10:00 UTC.
+
+**INSTAGRAM carousel (educational, Monday) — "5 евтини източника на протеин"**
+- Different topic from the TikTok. 7 slides 1080x1350 (out/2026-11-23/carousel.py). No app, no app CTA.
+- Protein numbers verified via web search: яйца 6–7 g/egg, извара ~17 g/100g, пилешко ~30 g/100g,
+  леща/боб ~9 g/100g, риба тон ~25 g/100g. **Източник: USDA FoodData Central, forlife.bg** (in caption
+  + last slide). Last slide "Запази си го" + "Кое слагаш в количката?".
+- Caption ends on save (no app CTA). **IG carousel** post id `cmwsy1ps604kpmf07dt1oc2xb`, sched 07:30:04Z.
+
+**INSTAGRAM stories (3 frames) — teaser -> reveal -> CTA** (out/2026-11-23/stories.py, 1080x1920)
+- 1 (teaser) "Дюнер или чийзбургер?" split image — id `cmwsy1yxu04sfkc07lf0rhz2a`.
+- 2 (reveal) real app screen + "Дюнер 653 / Чийзбургер 535 (USDA) / Дюнерът води" — id `cmwsy1zih04sgkc07uzb4e5sn`.
+- 3 (CTA) "Снимай чинията с Pulsify / Линк в профила" — id `cmwsy203l04sikc074fulseoz`.
+- Staggered 07:30/07:31/07:32Z to keep order. Rotation: next time try myth/fact or behind-the-scenes.
+
+### Publish verification (07:33Z)
+- **TikTok** PUBLISHED -> https://www.tiktok.com/@pulsify8
+- **IG carousel** PUBLISHED -> https://www.instagram.com/p/DgE2PYLnEtn/
+- **IG story 1/2/3** PUBLISHED (stories/pulsifyfit/...9080, ...3153, ...0837)
+- **YouTube** FAILED (quota) -> rescheduled 10:00 UTC, QUEUE (`cmwsy6xho04w6kc07gmqd6k8c`). Verify later.
+
+**Dish log (30-day no-repeat):** shopska (11-22), баница (11-22 eve), **дюнер (11-23)**, чийзбургер (11-23).
+**Tooling this run:** make_video.py render_end_card now draws a **QR code** (python qrcode) + "Задръж Home
+и огради кода" — closes the missing-QR gap (was logo+text only). qrcode installed. out/2026-11-23/ has
+compose.py, carousel.py, stories.py (reusable patterns). Pixabay API works with a User-Agent header and
+WITHOUT the `category` param (that combo 403s). Daily free AI-scan limit on the test account ≈ enough for
+~1 scan/run — plan one real scan per day; use cited sources for extras.
+
+---
+
 ## 2026-11-22 (Sat) — APP VIDEO: photo-a-meal, shopska salata
 
 First real run. Set up integrations (state/integrations.json), per-platform settings

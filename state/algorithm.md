@@ -16,4 +16,15 @@ Updated by the weekly research and the Monday review. Our own Postiz analytics b
 - Same core: retention and shares. Never upload a video with another platform's watermark.
 
 ## Our data
-(Monday review writes here what our own posts show.)
+### 2026-11-23 (Mon review, day-1 data — treat as baseline, not proof)
+- TikTok is our only real reach on day one: 763 views vs IG 19 vs YT 41. Brand-new, 0 followers.
+  Treat IG/YT as long-build channels; expect reach to come from TikTok for now.
+- Claim/belief-challenge hook ("мислиш шопската е лека?", 588 views) beat the soft "Колко калории
+  има в..." opener ("Колко калории има тази баница?", 175 views) on day one. Confounded by head
+  start, but it matches the 10.1 kill list — keep leading with a claim/conflict.
+- 0 comments / 0 shares / 0 saves so far. Comment-bait questions haven't converted at this tiny
+  scale. Watch; if still 0 at real view counts, ask for a concrete number/guess in the caption.
+- Limitation: postiz API gives only views/likes/comments/shares (+reach/saves on IG). No retention,
+  watch-time or completion. Retention remains a design assumption, not a measured number here.
+- Not enough data yet to call voice vs no-voice, morning vs evening, or score-vs-result. See
+  state/insights.md 2026-11-23 for the watch-list.
