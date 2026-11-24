@@ -40,4 +40,6 @@ https://archive.org/details/Komiku-ItsTimeForAdventureVol2
   upbeat_3 (evening banitsa guess-the-calories video).
 - 2026-11-23: **upbeat_1 (Komiku "Battle Theme") — morning döner vs cheeseburger face-off.**
 - 2026-11-23 evening: **chill_3 (CalmPills "Absolvo") — "Мит или факт: вечерята не те качва" (no-voice, 0.35).**
-  Next video: avoid chill_3 back-to-back; morning used upbeat_1, so a different track either way.
+- 2026-11-24: **upbeat_2 (Komiku "Tension") — morning мюсли app TikTok; chill_5 (CalmPills "Frozen Jungle") — IG sleep reel.**
+- 2026-11-24 evening: **upbeat_3 (Komiku "Balance") — "Пърженето утроява калориите" fries edu TikTok (no-voice, 0.35).**
+  Next video: avoid upbeat_3 back-to-back; morning used upbeat_2, so pick a different track either way.

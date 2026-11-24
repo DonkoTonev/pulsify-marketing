@@ -1,5 +1,76 @@
 # Post log
 
+## 2026-11-24 (Tue) — EVENING TikTok (educational): "Пърженето утроява калориите на картофа"
+
+**Run:** evening (evening.sh, ~19:59 Sofia / 17:59 UTC). TikTok ONLY (no IG/YouTube/stories/review, §7).
+This is today's **2nd** TikTok (max 2/day) — verified exactly 1 existed before this run (morning мюсли app
+`cmwud8sah00knoa07c7yynrpx`). Different topic AND format from the morning: morning = app-integrated food
+scan ("Скритите калории", мюсли 614); evening = educational cooking-method contrast (no app, no CTA).
+Output: out/2026-11-24-evening/.
+
+**Premise step (§10.1):** 10 educational candidates scored; winner **"label serving-size trick" (8.3)**.
+BUT Pixabay had NO clean packaged-chips footage (results polluted: camel, forest birds, abstract cards,
+Eiffel Tower, + one AI-generated rabbit clip barred by §5). The two clean, subject-correct, in-motion
+vertical food clips were **steamy fries** and **popcorn**. Since frame 0 is everything (§10.2/§17),
+pivoted to the premise that fits the killer fries footage honestly: **cooking-method contrast — same
+potato, boiled vs fried** (~8.0, still fresh + on-brand calorie-awareness). Avoided the dishonest move of
+labeling fries as "чипс" (§17 subject-match; §5 honesty).
+
+**Format / beats (no app, no CTA, no QR, no end card — educational §4; §16-tight):** 4 beats, **13.80 s**:
+A HOOK 3.2 s (steamy golden fries, push-in zoom) callout "Ако обичаш пържени картофки, гледай това" ->
+B 3.3 s baseline CARD (dark gradient) "Същият картоф / ВАРЕН / 87 ккал / на 100 г" + open loop
+"А пърженият?" (ding on the 87) -> C 3.3 s fries (zoom) "Същото количество, но пържено..." ->
+D 4.0 s PAYOFF: count-up 0->312 on fries + "ПЪРЖЕН · на 100 г" + "Почти 4 пъти повече / Виновно е
+олиото" + "Запази си го" (impact when 312 locks), loops back into A. Built via
+out/2026-11-24-evening/compose.py (per-segment ffmpeg ultrafast + concat stream-copy; counter = 10 PNG
+stamps overlaid in sequence). Visual variety §10.4 = (b) real Pixabay footage + (c) motion graphics
+(baseline card + count-up).
+
+**Hook (frame 0, on-screen):** "Ако обичаш пържени картофки, гледай това". **Hook type (§17) = 4
+(callout)** — rotates off the morning's type 1.
+
+**Voice:** **NONE** (no-voice: big captions + music + 2 SFX). Alternation: morning had voice (Kalina),
+so evening is voiceless -> clean daily voice-vs-no-voice read within TikTok. No AI voice + no AI-generated
+realistic content -> **video_made_with_ai=false** (honest).
+
+**Music:** **assets/music/upbeat_3.mp3** (Komiku "Balance", CC0), 0.35 (no voice). Not upbeat_2 (morning).
+SFX: ding on the baseline 87, impact on the fried-312 lock (reused synth ding.wav/impact.wav, credits.md).
+
+**Accuracy (§5):** varen potato ~87 ккал/100 г vs deep-fried fries ~312 ккал/100 г (≈3.6×); the gap is
+mostly the oil absorbed in frying. Web-checked; recorded both as reference rows in state/numbers.md.
+No personal calorie target, no weight-loss promise, no body/food shaming — frames a healthier cooking
+choice (bake instead of fry). **Източник in caption:** USDA FoodData Central.
+
+**Quality gate (§10.5 / §16):** dur 13.80 s ✓ (12-20). First-2 s = full-bleed steamy fries in motion +
+claim-lead callout, no app/logo/letterbox/black ✓. Contact sheet: motion every beat, NO app (educational),
+NO end card/QR, payoff (312) only in the last beat via the counter (87 baseline is setup, not the answer) ✓.
+Loop fries->fries seamless. Audio mean -27.6 / max -10.9 dB (no clip). Numbers match numbers.md (87/312),
+portion basis "на 100 г" shown. Scores **H8 / C8 / Surprise8 / Pace7.5 / Share8 / Prod8 = avg 7.9,
+hook 8 -> PASS** (one pass, no re-render). Weakest = the Варен baseline card (~3.3 s, slightly slow) but it
+carries the open loop "А пърженият?" that sets up the payoff. **hunspell: ok** (only Latin/ккал/г flags);
+**editor: OK** (§20 independent fresh-context editor returned OK, no changes). **proofread: ok** (пълен
+член "пърженият/картофът"; comma before "а"/"което"; "Pulsify" not used — educational).
+
+**Caption (TikTok, educational — no app CTA; §15 cross-promo N/A for educational):**
+"Същият картоф, но варен е около 87 ккал на 100 г, а пържен — около 312. Разликата е основно олиото,
+което картофът попива при пърженето. Една средна порция пържени картофки (150 г) е към 470 калории. /
+Ти как ги правиш — на фурна или в тиган? Пиши отдолу. / Източник: USDA FoodData Central. / #картофи
+#пържени #калории #хранене #фитнес" (concrete фурна/тиган comment prompt per insights.md).
+
+**Experiment:** none active (state/experiments.md still absent — research.sh hasn't run).
+
+**Publish:** uploaded final.mp4 -> https://uploads.postiz.com/b55E7jofdy.mp4. **TikTok** post id
+**`cmwuzx650099io307d06qnlp1`**, --shortLink false (§18), settings DIRECT_POST + video_made_with_ai=false.
+**PUBLISHED 17:59:00Z** -> https://www.tiktok.com/@pulsify8 (releaseId v_pub_url~v2.7711798982841763873,
+no error; verified via posts:list foreground poll). Today's TikTok count: **2/2** (morning мюсли app +
+this evening fries edu).
+
+**Dish/topic log (30-day no-repeat):** shopska (11-22), баница (11-22 eve), дюнер (11-23), чийзбургер
+(11-23), meal-timing myth (11-23 eve), 5 cheap proteins (11-23 IG), мюсли купа 614 (11-24),
+сън↔глад (11-24 IG), **варен vs пържен картоф 87/312 (11-24 eve, NEW)**.
+
+---
+
 ## 2026-11-24 (Tue) — DAILY RUN (run.sh): morning app TikTok + YouTube Short + IG edu Reel + stories
 
 **Run:** daily (run.sh, ~08:40 Sofia / 06:40–07:45 UTC). Tuesday ⇒ NOT Monday, so no weekly review.

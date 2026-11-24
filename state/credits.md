@@ -57,3 +57,18 @@ Pixabay VIDEO b-roll — IG educational Reel "Недоспиването те п
   forest, beach, Christmas rabbit, ice-cream/honey dessert) — vetted out, NOT used.
 Music: upbeat_2.mp3 = Komiku "Tension" (CC0, morning TikTok); chill_5.mp3 = CalmPills "Frozen Jungle"
   (CC0, IG reel). SFX: reused the synthesized ding.wav/impact.wav (see 2026-11-23-evening section).
+
+## 2026-11-24 EVENING assets — Pixabay Content License (free use; logged per §10.4)
+Pixabay VIDEO b-roll — EVENING educational TikTok "Пърженето утроява калориите на картофа"
+(cooking-method contrast; NO app, educational):
+- potato_chips_318798.mp4 — steamy golden fries, vertical, in motion (HOOK frame 0 + build + payoff bg).
+  Author **StoryTeller159**, https://pixabay.com/videos/id-318798/
+  (The clip is labeled "potato chips" on Pixabay but is visually french fries — used honestly as FRIES;
+   the on-screen story is about пържени картофи/картофки, so subject matches.)
+  NOTE: the rest of this evening's Pixabay fetch was the usual mislabeled junk (camel, forest birds,
+  abstract circuit cards, autumn forest, Eiffel Tower, a cozy cup, a bubble-tea drink) AND one
+  AI-generated clip (a rabbit in pajamas, "cookies_247597") — all vetted out, NOT used (§5 bars AI
+  realistic imagery). Popcorn clip snacks_bowl_301691 (ZT_OSCAR) fetched + vetted clean but NOT used
+  (off-subject for a potatoes video).
+Music: upbeat_3.mp3 = Komiku "Balance" (CC0, 0.35, no-voice). SFX: reused synthesized ding.wav
+  (baseline 87) + impact.wav (fried 312 lock) — see 2026-11-23-evening section.
