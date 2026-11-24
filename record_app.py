@@ -54,7 +54,12 @@ def run(scenario, out):
                 btn = pg.get_by_role("button", name="Sign In")  # submit; fall back to Enter
                 (btn.first.click() if btn.count() else pw.press("Enter"))
                 pg.wait_for_load_state("networkidle")
-                pg.wait_for_timeout(2500)
+                # On a Render cold start the post-login redirect can lag the 2.5 s wait,
+                # so poll the URL for up to ~30 s before declaring failure (false-negative fix).
+                for _ in range(30):
+                    if "/login" not in pg.url:
+                        break
+                    pg.wait_for_timeout(1000)
                 for skip in ("Пропусни", "Skip"):  # welcome tour
                     if pg.get_by_text(skip, exact=True).count():
                         pg.get_by_text(skip, exact=True).first.click()

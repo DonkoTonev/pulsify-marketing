@@ -25,7 +25,12 @@ web claims are secondary.
 | 2026-11-22 | TikTok evening (edu) | "Колко калории има тази баница?" | whole banitsa close-up | logged ~8 avg | 175 views, 2 likes |
 | 2026-11-23 | TikTok morning (app) | "Дюнер или чийзбургер?" / "Кое е по-калорично?" | döner+burger split + VS | 8/9/7/7/8/8 | (pending) |
 | 2026-11-23 | TikTok evening (edu) | "Не, вечерята не те качва" | fork into a salmon salad, close-up in motion | 8/8/7/7/7/8 | (pending) |
+| 2026-11-24 | TikTok morning (app) | "Мислиш, че мюслито е лека закуска?" | yogurt/granola bowl close-up, push-in | 8/8/8/7.5/7.5/8 | (pending) |
+| 2026-11-24 | IG reel (edu) | "Недоспиването те прави по-гладен" | woman on phone in bed at night | 8/8/7/7.5/7.5/7.5 | (pending) |
 
 Hook-type rotation (§17): 2026-11-23 morning = type 3 (challenge/guess); 2026-11-23 evening =
-type 1 (contrast/surprise, belief-challenge "Не, ... не те качва"). Keep alternating; the Monday
-review keeps whichever type holds 3-second retention best.
+type 1 (contrast/surprise); 2026-11-24 TikTok = type 1 (belief-challenge — reused our day-1
+winning shape deliberately for the money post); 2026-11-24 IG reel = type 2 (mistake/correction).
+Keep alternating; the Monday review keeps whichever type holds 3-second retention best.
+Note: "мислиш [храна] е лека?" is now used twice (shopska 11-22, мюсли 11-24) — reusing the SHAPE,
+never the exact words; the Monday review should check if it still over-performs.

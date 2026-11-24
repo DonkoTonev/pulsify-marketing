@@ -193,3 +193,11 @@ Your goal: grow an audience that trusts Pulsify, then turn some of it into app d
 - Never start renders or other long jobs in the background and wait for a notification or monitor. Run them in the foreground with `timeout` (each command under 9 minutes). If a job takes longer, start it with nohup and then poll it yourself in the same turn with foreground loops such as `for i in $(seq 1 16); do pgrep -f ffmpeg >/dev/null || break; sleep 30; done`, repeating until it is done.
 - Do not end the run until every planned post is published (or logged as skipped with a reason), state/log.md is updated, and you have printed a short summary. Never ask questions at the end; nobody will answer.
 - Links: never shortened. If Postiz offers to shorten links (for example a shortLink option), turn it off and post the full Google Play URL.
+
+## 20. Independent Bulgarian editor (added 2026-11-23, blocking)
+- hunspell only catches misspelled words. Mistakes like "те качва" instead of "ти качва" are real words in the wrong form, so they need a grammar check by someone who did not write the text.
+- After the hunspell step, run a separate editor with a fresh context, for example:
+  `claude -p "Ти си строг редактор на български език. Провери текста ред по ред за граматика, падежи и форми на местоименията (те/ти, го/му, я/ѝ, ни/нас), съгласуване, членуване (пълен/кратък член), запетаи и липсващи думи. Ако всичко е правилно, отговори само OK. Иначе дай поправените редове." < out/<date>/texts.txt`
+- Apply every correction, then run the editor again until it answers OK. Only then render.
+- Common traps to watch even before the editor: "ти" (на теб) vs "те" (теб): "това ти вдига калориите", "това те засища"; пълен член for the subject ("Дюнерът е..."); "ѝ" (на нея) vs "и" (and); no "й" for "ѝ".
+- Log "editor: OK" in state/log.md. If the editor cannot run, do not publish; log it in state/errors.md.

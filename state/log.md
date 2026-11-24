@@ -1,5 +1,107 @@
 # Post log
 
+## 2026-11-24 (Tue) — DAILY RUN (run.sh): morning app TikTok + YouTube Short + IG edu Reel + stories
+
+**Run:** daily (run.sh, ~08:40 Sofia / 06:40–07:45 UTC). Tuesday ⇒ NOT Monday, so no weekly review.
+Posts per §3 for Tue: morning app-integrated TikTok + YouTube Short (same file) + IG educational Reel
+(different topic) + IG stories. Output: out/2026-11-24/. Evening TikTok is a separate run (evening.sh).
+
+**Pre-flight / fixes this run:**
+- Re-read CLAUDE.md from disk (working tree had §20 uncommitted — now in loaded context too).
+- Verified yesterday's posts all PUBLISHED incl. the rescheduled YT short (SllyTJwKTsI, 10:00Z).
+- **§18 link-shortener catch:** `postiz posts:create --shortLink` DEFAULTS TO true → that's why
+  yesterday's YT description became a dub.sh link. Passed **`--shortLink false` on EVERY post today**
+  so the full Google Play URL survives.
+- **record_app.py login fix:** the first scan "failed" but the screenshot showed a logged-in dashboard
+  — a Render cold-start redirect race (2.5 s wait too short). Patched login to poll the URL up to ~30 s
+  before declaring failure; re-ran on the warm server → scan succeeded. No AI scan was wasted (first
+  attempt died before upload). Used the ONE daily free AI scan on the granola bowl.
+
+### MORNING TikTok (app-integrated) — "Скритите калории": мюсли купа = 614 ккал
+- **Premise step (§10.1):** 10 "скритите калории" candidates scored; winner **granola/muesli bowl (8.3)**
+  — universally believed "light", ingredients stack, scannable. Killed: цезар салата (salad/shopska used
+  <30 d). The twist discovered from the real scan: 614 ≈ дюнер (653), only **39 ккал** apart.
+- **Real scan (numbers.md):** "Мюсли с кисело мляко и горски плодове", **614 ккал**, 16.8 P / 110.9 C /
+  12.4 F, **420 г**, точност 86%. Per-ingredient: мюсли 120 г = **456 ккал** (380 ккал/100 г — the hidden
+  bomb, 74% of total), кисело мляко 150 г = 90, малини 70 г = 36, къпини 50 г = 22, ягоди ≈ 10.
+  assets/food/granola.jpg = the scanned photo (Pixabay, user "Pexels").
+- **Format / beats (~16.9 s, §16-tight, payoff last, loop):** A HOOK 3.2 s (real yogurt-bowl b-roll in
+  motion, push-in) "Мислиш, че мюслито е лека закуска?" → B 3.5 s the REAL scanned muesli photo + stamped
+  "456 ккал" + "120 г · 380 ккал на 100 г" (ding) → **APP 3.2 s** real Pulsify result card (614 / точност
+  86%) — app once, ~1/3 in (6.7 s) → C 3.7 s closer muesli + stamped "614 ккал · 420 г" (ding) → **D 3.3 s
+  twist** "Почти колкото цял ДЮНЕР / Купа мюсли 614 vs Дюнер 653 / Разликата е само 39 ккал" + small CTA
+  overlay, loops to A. Built via out/2026-11-24/compose_morning.py (per-segment ffmpeg + concat stream-copy;
+  added a push-in zoom to seg_clip). final.mp4 = **16.90 s**, 1080x1920.
+- **QG fix (1 re-render):** first build used a honey/ICE-CREAM clip for the "само мюслито" beat (misleading)
+  and a near-static hook. Rebuilt: real scanned-muesli photo for the muesli beats (honest, subject-correct)
+  + push-in zoom on the hook for motion.
+- **Hook (frame 0):** "Мислиш, че мюслито е лека закуска?" — our proven belief-challenge shape
+  (= "мислиш шопската е лека?", day-1 winner). **Hook type (§17) = 1 (belief-challenge).** Chose our
+  strongest data pattern for the money post over strict rotation; the IG reel tests a different type.
+- **Voice:** **bg-BG-KalinaNeural** (rotation: 11-23 morning = Borislav, evening = no-voice → today Kalina).
+  TTS phonetic "Пулсифай", numbers as Bulgarian words, rate +10%. **video_made_with_ai=true** (AI voice).
+- **Music:** assets/music/upbeat_2.mp3 (Komiku "Tension", CC0), 0.12 under voice. Not upbeat_1 (11-23 AM).
+  SFX: ding on the 456 & 614 stamps, impact on the дюнер twist (reused out/…-evening/sfx/*.wav, synth).
+- **Quality gate (§10.5/§16):** dur 16.9 s ✓ (12-20). First-2 s = appetizing bowl in motion + claim-lead
+  text, no app/logo/letterbox/black ✓. Contact sheet: motion every beat, app once & after 3 s, NO end
+  card/QR (§16), payoff in the last beat ✓. Audio mean -24 dB / max -5 dB (voice+music+SFX present).
+  Scores **H8 / C8 / Surprise8 / Pace7.5 / Share7.5 / Prod8 = avg 7.8, hook 8 → PASS.**
+  **proofread: ok**; **hunspell: ok** (only Latin/loanword flags); **editor: OK** (§20 — one fix applied:
+  "грелина (хормонът→хормона на глада)" in the IG caption; re-ran → OK).
+- **Caption (TikTok, §11.3 standard CTA; §15 cross-promo NOT used this post — kept the money post direct,
+  will rotate cross-promo onto a later app TikTok):** "Купа мюсли с кисело мляко и горски плодове — звучи
+  леко, нали? Сканирах я и излезе 614 ккал, почти колкото цял дюнер. Най-много дава самото мюсли — 456 ккал
+  за 120 г. / Колко мислеше, че е? Пиши число отдолу 👇 / Потърси Pulsify в Google Play 🔍 / Източник:
+  реален скан с Pulsify. / #мюсли #закуска #калории #хранене #фитнес" (concrete number-guess comment bait,
+  per insights.md).
+- **Publish:** uploaded → uploads.postiz.com/BFERwV50iG.mp4. **TikTok** post id **`cmwud8sah00knoa07c7yynrpx`**
+  (DIRECT_POST, --shortLink false, made_with_ai=true). **PUBLISHED** → https://www.tiktok.com/@pulsify8
+  (verified posts:list, state PUBLISHED, no error). Today's TikTok count: **1/2** (evening.sh will add #2).
+
+### YouTube Short — same BG file (NOT a separate EN version, per §2/§3)
+- Title "614 калории в една купа мюсли? Скритите калории в закуската". Description: 2-3 sentences + **FULL**
+  Play link (https://play.google.com/store/apps/details?id=com.apex.fitness, --shortLink false) + Pixabay/
+  Komiku credits + Източник. made_with_ai=true. **Scheduled 2026-11-24T10:00:00Z** (past the ~08:00 UTC
+  new-channel quota reset, like yesterday) — id **`cmwud9kxg00ies2072iktupye`**. VERIFY after 10:00 UTC.
+
+### INSTAGRAM educational Reel — "Недоспиването те прави по-гладен" (sleep & hunger)
+- **Different topic** from the TikTok (§3) + **healthy-habits variety** (§3 "1 in 3", none recently; never
+  two in a row — OK). Educational, **no app, no CTA**, ends on "Запази си го". ~22 s, out/2026-11-24/
+  compose_ig.py. **NO voice** (captions + chill music + 2 SFX) → gives the Monday review a voice-vs-no-voice
+  read against the morning TikTok (voice). **made_with_ai=false** (no AI voice/content).
+- Beats: A HOOK (woman on phone in bed at night — the cause) "Недоспиването те прави по-гладен" → B (face)
+  "По-малко сън, повече грелин" / "Грелинът е хормонът на глада" → C stat card "+250 ккал на ден при
+  недоспиване / най-вече сладко и мазно" (ding) → D (morning tray) "И посягаш към сладко и мазно" →
+  E "Първо оправи съня, после диетата / Запази си го", loops.
+- **Hook type (§17) = 2 (mistake/correction)** — rotates off the TikTok's type 1.
+- **Accuracy (§5):** недоспиване → ↑грелин (15-28%) и средно до +250 ккал/ден приет прием; web-checked.
+  **Източник on-screen + caption: Nature Reviews Endocrinology, 2022** (s41574-022-00747-7). No medical
+  advice, no body-shape framing, no personal targets. Stock people = atmosphere only, not testimonials (§5).
+- **QG:** dur 22 s ✓ (15-40). Frame-0 real person in motion, no bands ✓. H8/C8/Surprise7/Pace7.5/Share7.5/
+  Prod7.5 = avg 7.6, hook 8 → PASS. editor: OK.
+- **Caption:** "Ако си гладен постоянно, виж колко спиш. При недоспиване тялото вдига грелина (хормона на
+  глада) и хората ядат средно до 250 калории повече на ден, най-вече сладко и мазно. Понякога решението не
+  е нова диета, а повече сън. / Запази си го и го прати на вечно гладен приятел 👇 / Източник: Nature
+  Reviews Endocrinology, 2022. / #сън #глад #хранене #навици #фитнес"
+- **Publish:** uploads.postiz.com/Wblxg6pYnx.mp4 → **IG Reel** post id **`cmwudfko200l1s207dqcpeq7w`**
+  (post_type=post, made_with_ai=false), sched 07:34Z. VERIFY.
+
+### INSTAGRAM stories (3 frames) — myth → fact → CTA (rotates off 11-22/11-23 guess/this-or-that)
+- out/2026-11-24/stories.py, 1080x1920, text inside y 260–1660. Real granola photo + real app card.
+  Removed 👉/👆 emojis (render as tofu in DejaVu). editor: OK on the new lines.
+- 1 (myth) granola + "МИТ или ФАКТ: Мюслито винаги ли е лека закуска? / Истината в следващата стори" —
+  id `cmwudizyl00n4s207g7zoxe00`, sched 07:42Z.
+- 2 (fact) real app card + "ФАКТ: 614 ккал в една купа / Почти колкото цял дюнер" — id
+  `cmwudj0ie00p4oa07yvjil712`, 07:43Z.
+- 3 (CTA) "Снимай чинията с Pulsify / Линк в профила" — id `cmwudj10y00p5oa07u5m4zqlk`, 07:44Z.
+- Say "стори" (§9) ✓. Rotation next time: behind-the-scenes or a quick tip.
+
+**Dish/topic log (30-day no-repeat):** shopska (11-22), баница (11-22 eve), дюнер (11-23), чийзбургер
+(11-23), meal-timing myth (11-23 eve), 5 cheap proteins (11-23 IG), **мюсли купа 614 (11-24, NEW)**,
+**сън↔глад (11-24 IG, NEW)**. Hooks logged in hooks.md. Credits in credits.md.
+
+---
+
 ## 2026-11-23 (Mon) — EVENING TikTok (educational): "Мит или факт — вечерята не те качва"
 
 **Run:** evening (evening.sh, ~21:00 Sofia). TikTok ONLY (no IG/YouTube/stories/review). This is today's

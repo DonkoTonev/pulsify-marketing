@@ -38,3 +38,22 @@ Used in the 2026-11-23 EVENING educational TikTok "Мит или факт — в
 ## Sound effects (out/2026-11-23-evening/sfx/)
 - impact.wav (0.35 s) and ding.wav (0.6 s) — short synthesized UI tones (PCM, local ffmpeg toolchain,
   no third-party/commercial source). impact on the "е мит" beat, ding on the ФАКТ reveal.
+
+## 2026-11-24 assets — Pixabay Content License (free use; logged per §10.4)
+Food photo (assets/food/granola.jpg), used as the real AI-scan input + hero on 2026-11-24:
+- granola.jpg — muesli/yogurt/berries bowl, Pixabay user **Pexels** (id 1846085),
+  https://pixabay.com/photos/berries-muesli-blackberries-bowl-1846085/
+Pixabay VIDEO b-roll — MORNING app TikTok "Скритите калории" (мюсли купа):
+- granola_yogurt_bowl_198764.mp4 — yogurt bowl w/ blueberries + flower (HOOK, frame 0, push-in).
+  Author **deeanaarts**, https://pixabay.com/videos/id-198764/
+Pixabay VIDEO b-roll — IG educational Reel "Недоспиването те прави по-гладен" (sleep & hunger):
+- woman_sleeping_bed_233390.mp4 — woman on her phone in bed at night (HOOK, atmosphere, NOT a
+  testimonial). Author **Yasir1120**, https://pixabay.com/videos/id-233390/
+- woman_rubbing_eyes_tired_178472.mp4 — dappled-light face portrait (beat B, atmosphere).
+  Author **Acatroxen**, https://pixabay.com/videos/id-178472/
+- alarm_clock_morning_236256.mp4 — cozy morning tray w/ coffee (beat D, atmosphere).
+  Author **xBriantcx**, https://pixabay.com/videos/id-236256/
+  NOTE: most of 2026-11-24's Pixabay fetch was mislabeled junk (camel, moonlit sea, ramen, misty
+  forest, beach, Christmas rabbit, ice-cream/honey dessert) — vetted out, NOT used.
+Music: upbeat_2.mp3 = Komiku "Tension" (CC0, morning TikTok); chill_5.mp3 = CalmPills "Frozen Jungle"
+  (CC0, IG reel). SFX: reused the synthesized ding.wav/impact.wav (see 2026-11-23-evening section).
