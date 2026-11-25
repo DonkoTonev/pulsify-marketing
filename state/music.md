@@ -46,3 +46,5 @@ https://archive.org/details/Komiku-ItsTimeForAdventureVol2
 - 2026-11-25: **upbeat_1 (Komiku "Battle Theme") — morning app TikTok "Калорийна битка" (voice Borislav, 0.12).**
   Thematic "battle" track; not used since 11-23 (not back-to-back). Next video: avoid upbeat_1 back-to-back.
   (IG carousel/stories are silent images — no music track.)
+- 2026-11-25 evening: **chill_6 (CalmPills "Introverted Chords") — "Фрапето крие повече" течни-калории edu TikTok (no-voice, 0.35).**
+  Fresh track (never used before); calm café mood. Not upbeat_1 (morning) / upbeat_3 (11-24 eve). SFX: ding (ingredients) + impact (170 lock). Next video: avoid chill_6 back-to-back.

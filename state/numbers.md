@@ -19,12 +19,15 @@ add a dated row — don't silently overwrite. Never use unrealistic portions.
 | Кебапчета на скара (порция, 2 бр) | 130 g (2 кебапчета) | 300 | 21 | 2.3 | 20 | 2026-11-25 | Derived from the real scan density **230 ккал/100 г** (0.130 × 2070/0.900). Single-serving used in the "Калорийна битка" TikTok. |
 | Хляб, бял (1 филия) | 30 g | 80 | 2.5 | 15 | 1 | 2026-11-25 | **Reliable source, NOT a scan** — USDA FoodData Central (white bread ~265 kcal/100 g). Side in the кебапче meal battle. |
 | Зелена салата (с 1 ч.л. зехтин) | 200 g | 100 | 2 | 6 | 7 | 2026-11-25 | **Reliable source, NOT a scan** — USDA (mixed greens/tomato/cucumber ~20 kcal/100 g + ~45 kcal 1 ч.л. зехтин). Smart-swap side in the кебапче battle. |
+| Фрапе (сладко, с прясно мляко) | ~290 мл (2 ч.л. нескафе + 2 ч.л. захар 8 г + 200 мл прясно мляко 3.6% + лед) | 170 | 7 | 18 | 7 | 2026-11-25 | **Reliable source, NOT a scan** — USDA (мляко ~128 ккал/200 мл + захар 8 г ≈ 32 + кафе ~2 ≈ 162 → 170). Range **150–300 ккал** според млякото/захарта/сладолед. Evening edu TikTok "течни калории". |
+| Кафе, черно (без захар и мляко) | 1 чаша (~200 мл) | 2 | 0 | 0 | 0 | 2026-11-25 | **Reliable source, NOT a scan** — USDA (brewed coffee/espresso ~1–2 ккал без добавки). Contrast in the фрапе edu TikTok. |
 
 ### Калорийна битка — кебапче меню (2026-11-25)
 Typical обяд = кебапчета 130 г (300) + пържени картофки 150 г (470) + филия хляб 30 г (80) = **850 ккал**.
 Smart swap = кебапчета 130 г (300) + голяма салата 200 г (100) = **400 ккал**. Разлика ≈ 450 ккал (повече от двойно); виновна е гарнитурата, не месото.
 
 ## Notes
+- Фрапе: **течните калории засищат по-слабо от твърдата храна**, затова се добавят върху храната без компенсация (хората не ядат по-малко след тях). Източник: **DiMeglio & Mattes, Int. J. Obesity 2000** (liquid vs solid carbohydrate; qualifier: доказателствата са в тази посока, но неединодушни — формулирай предпазливо). Използвай **170 ккал** (сладко фрапе с мляко) и **2 ккал** (черно кафе) навсякъде.
 - Шопска: reuse **663 kcal / 905 g** for any BG post. The two scans show real per-run AI variation
   (different estimated weight) — if ever shown together, say so openly, don't average.
 - Баница: always frame as a **whole homemade tray (950 g)**, never imply it's one piece.
