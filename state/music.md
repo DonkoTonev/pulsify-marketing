@@ -43,3 +43,6 @@ https://archive.org/details/Komiku-ItsTimeForAdventureVol2
 - 2026-11-24: **upbeat_2 (Komiku "Tension") — morning мюсли app TikTok; chill_5 (CalmPills "Frozen Jungle") — IG sleep reel.**
 - 2026-11-24 evening: **upbeat_3 (Komiku "Balance") — "Пърженето утроява калориите" fries edu TikTok (no-voice, 0.35).**
   Next video: avoid upbeat_3 back-to-back; morning used upbeat_2, so pick a different track either way.
+- 2026-11-25: **upbeat_1 (Komiku "Battle Theme") — morning app TikTok "Калорийна битка" (voice Borislav, 0.12).**
+  Thematic "battle" track; not used since 11-23 (not back-to-back). Next video: avoid upbeat_1 back-to-back.
+  (IG carousel/stories are silent images — no music track.)

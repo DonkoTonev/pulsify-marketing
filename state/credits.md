@@ -72,3 +72,22 @@ Pixabay VIDEO b-roll — EVENING educational TikTok "Пърженето утро
   (off-subject for a potatoes video).
 Music: upbeat_3.mp3 = Komiku "Balance" (CC0, 0.35, no-voice). SFX: reused synthesized ding.wav
   (baseline 87) + impact.wav (fried 312 lock) — see 2026-11-23-evening section.
+
+## 2026-11-25 assets — Pixabay Content License (free use; logged per §10.4)
+MORNING app TikTok "Калорийна битка — кебапче меню" (кебапчета + гарнитура):
+Food photos (assets/food/):
+- kebapche.jpg — grilled ćevapi/кебапчета, Pixabay user **thoha** (id 4546669),
+  https://pixabay.com/photos/%C4%87evap%C4%8Di%C4%87i-%C4%87evapi-minced-meat-4546669/
+  Used as the REAL Pulsify AI-scan input (900 г платер = 2070 ккал, 230 ккал/100 г) + hook/reveal thumb.
+- salad.jpg — fresh green salad, Pixabay user **stevepb** (id 374173),
+  https://pixabay.com/photos/salad-fresh-organic-food-diet-374173/ — swap-side thumb (cards + stories).
+- fries.jpg — bowl of french fries, Pixabay user **Pexels** (id 1842294),
+  https://pixabay.com/photos/bowl-french-fries-food-fries-1842294/ — typical-side thumb (cards + stories).
+Pixabay VIDEO b-roll:
+- grill.mp4 — sizzling grilled meat over embers/flames, close-up in motion (HOOK frame 0 + push-in).
+  Author **srb_films** (id 124830), https://pixabay.com/videos/id-124830/
+App card: real Pulsify scan screenshots (kebap_top.png / kebap_macros.png → raw/ing_a.png crop), test acct.
+Music: upbeat_1.mp3 = Komiku "Battle Theme" (CC0, 0.12 under voice — thematic for a "битка").
+SFX: reused synthesized ding.wav (running-total stamps) + impact.wav (final reveal) — see 2026-11-23-evening.
+IG carousel "Етикетът казва" + stories: motion-graphic text slides (no stock) + the Pixabay food photos
+  above + the real app screenshot (stories frame 3). No new external media.

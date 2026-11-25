@@ -28,13 +28,16 @@ web claims are secondary.
 | 2026-11-24 | TikTok morning (app) | "Мислиш, че мюслито е лека закуска?" | yogurt/granola bowl close-up, push-in | 8/8/8/7.5/7.5/8 | (pending) |
 | 2026-11-24 | IG reel (edu) | "Недоспиването те прави по-гладен" | woman on phone in bed at night | 8/8/7/7.5/7.5/7.5 | (pending) |
 | 2026-11-24 | TikTok evening (edu) | "Ако обичаш пържени картофки, гледай това" | steamy golden fries close-up in motion, push-in | 8/8/8/7.5/8/8 | (pending) |
+| 2026-11-25 | TikTok morning (app) | "Проблемът не са кебапчетата" | sizzling grilled кебапчета over embers, push-in | 8/8/8/7.5/8/8 | (pending) |
+| 2026-11-25 | IG carousel (edu) | "«Фит», «без захар», «протеинов» — какво значат наистина?" | "Етикетът казва" series title slide | n/a (carousel) | (pending) |
 
 Hook-type rotation (§17): 2026-11-23 morning = type 3 (challenge/guess); 2026-11-23 evening =
 type 1 (contrast/surprise); 2026-11-24 TikTok = type 1 (belief-challenge — reused our day-1
 winning shape deliberately for the money post); 2026-11-24 IG reel = type 2 (mistake/correction);
 2026-11-24 TikTok evening = type 4 (callout, "Ако ядеш X, гледай това") — rotated off the morning's
-type 1. So far logged: type 1 (x3), type 2 (x2), type 3 (x1), type 4 (x1); review 3-second retention
-once native analytics exist.
+type 1. 2026-11-25 TikTok morning = **type 2 (mistake/correction — "blaming the wrong thing")**,
+rotated off 11-24 morning's type 1. So far logged: type 1 (x3), type 2 (x3), type 3 (x1), type 4 (x1);
+review 3-second retention once native analytics exist.
 Keep alternating; the Monday review keeps whichever type holds 3-second retention best.
 Note: "мислиш [храна] е лека?" is now used twice (shopska 11-22, мюсли 11-24) — reusing the SHAPE,
 never the exact words; the Monday review should check if it still over-performs.

@@ -1,5 +1,124 @@
 # Post log
 
+## 2026-11-25 (Wed) — DAILY RUN (run.sh): morning app TikTok + YouTube Short + IG edu carousel + stories
+
+**Run:** daily (run.sh, ~08:40 Sofia / 06:37–07:15 UTC). **Wednesday** ⇒ NOT Monday, so no weekly review.
+(The invocation prompt said "Tuesday" but the date is 2026-11-25 = **Wednesday**; log confirms 11-24 was Tue.)
+Posts per §3 for Wed: morning **app-integrated** TikTok ("Калорийна битка", §4) + YouTube Short (same file)
++ IG **educational carousel** (Mon/Wed/Fri/Sun) + IG stories. Output: out/2026-11-25/. Evening TikTok is a
+separate run (evening.sh). No experiments/trends active (experiments.md & trends.md still absent — research.sh
+hasn't produced them). No new analytics screenshots in inbox/analytics/. Verified yesterday's posts all
+PUBLISHED incl. the 10:00Z YT short (AcdrPf7EQuI).
+
+### MORNING TikTok (app-integrated) — "Калорийна битка": кебапче меню, гарнитурата почти удвоява обяда
+- **Premise step (§10.1):** 10 "калорийна битка" candidates scored (would a stranger stop / comment-share /
+  relatable to a Bulgarian). Winner **скара/кебапче меню (8.3)** — peak-BG relatability, natural running
+  total, reliable scan, strong sizzling frame-0. Runners-up: пържола/шницел (potato-heavy, too close to
+  11-24 fries), сандвич (8.0, weaker frame-0), паста карбонара (8.0, clean but less "typical Bulgarian").
+  Killed for the app slot: фрапе vs черно кафе (9/9 relatability but a DRINK scans unreliably — saved as a
+  future edu idea); пилешко пане vs печено (overlaps 11-24 frying topic). Footage was **probed on Pixabay
+  BEFORE locking** (the 11-24-evening pivot lesson): grill/ćevapi/fries/salad all well-supported.
+- **30-day no-repeat (§6):** new dish **кебапче меню** + new topic **гарнитура / meal-swap** (distinct from
+  11-24's cooking-method edu; fries appear only as the incidental swapped-out side, not the subject).
+- **Real scan (numbers.md):** scanned assets/food/kebapche.jpg (grilled ćevapi) → app read a **full grill
+  platter**: "кебапчета на скара", **2070 ккал / 900 г**, 162 P / 18 C / 153 F, **точност 95%**,
+  **230 ккал/100 г** (the app displays per-100g + lets you set the real weight to recalc). 900 г = a shared
+  platter, NOT a one-person обяд (showing it as a meal would break §5 unrealistic-portion). So I anchored on
+  the app's own **230 ккал/100 г** and sized an honest single serving. ONE daily free AI scan used (§ cap).
+- **Honest numbers used (all sourced, realistic portions, in numbers.md):** 2 кебапчета 130 г = **300 ккал**
+  (derived from the real 230/100 г scan); пържени картофки 150 г = **470** (USDA, 11-24 row); филия хляб
+  30 г = **80** (USDA); зелена салата 200 г = **100** (USDA). **Typical обяд 850** vs **swap (салата) 400**
+  ≈ повече от двойно. "Виновна е гарнитурата, не месото."
+- **Format / beats (§16-tight, app once ~1/3 in, payoff LAST, loop; 4 beats, 15.30 s):**
+  A HOOK 3.2 s (sizzling grill in motion, push-in) "Проблемът не са кебапчетата" →
+  **APP 3.3 s** real Pulsify scan card (ing_a crop: кебапчета · 900 г · 230 ккал/100 г · 2070 ккал · 95%) +
+  overlay "230 ккал на 100 г · точност 95%" / "На снимката: цяла порция · 900 г" — app once, starts 3.2 s
+  (after 3 s), midpoint ~1/3 in → C 4.6 s running-total "receipt" (Кебапчета 300 + картофки 470 + хляб 80 =
+  850, dings on each) + open loop "А ако смениш само гарнитурата?" → D 4.2 s REVEAL: салата → 400 vs
+  картофки+хляб → 850, "Повече от двойно", "Виновна е гарнитурата, не месото" + small CTA pill
+  "Сканирай чинията с Pulsify" (§16-allowed), impact SFX, loops to grill. Built via
+  out/2026-11-25/compose_morning.py (per-segment ffmpeg ultrafast + concat stream-copy; row_png receipt
+  overlays timed with enable=between). Visual variety §10.4 = (a) real app recording + (b) real Pixabay
+  footage + (c) motion graphics.
+- **Hook (frame 0):** "Проблемът не са кебапчетата". **Hook type (§17) = 2 (mistake/correction — you're
+  blaming the wrong thing)** — rotates off 11-24 morning's type 1.
+- **Voice:** **bg-BG-BorislavNeural** (last voice was Kalina 11-24 → Borislav). TTS phonetic "Пулсифай",
+  numbers as Bulgarian words, rate +10%. **video_made_with_ai=true** (AI voice).
+- **Music:** assets/music/upbeat_1.mp3 (Komiku "Battle Theme", CC0, thematic for a битка), 0.12 under voice.
+  Not upbeat_2/upbeat_3 (11-24); not back-to-back (last used 11-23). SFX: synth ding ×4 (running total) +
+  impact (reveal).
+- **Quality gate (§10.5/§16):** dur 15.30 s ✓ (12-20). First-2 s = full-bleed sizzling кебапчета in motion +
+  claim-lead hook, no app/logo/letterbox/black ✓ (frame-strip checked). Contact sheet: motion every beat,
+  app once & after 3 s, NO end card/QR (small CTA pill only, §16), payoff in the last beat ✓. Audio mean
+  -25.1 / max -6.1 dB (no clip). Numbers match numbers.md; portions shown on every row. Scores
+  **H8 / C8 / Surprise8 / Pace7.5 / Share8 / Prod8 = avg 7.9, hook 8 → PASS** (one build, no re-render).
+  Weakest = the app-card beat (~3.3 s, slow push-in only) but it carries the proof + per-100g anchor.
+  **hunspell: ok** (only Latin/Пулсифай/units flags); **editor: OK** (§20 fresh-context editor — applied 3
+  fixes: "На снимката: цяла порция…", "А ако смениш…", voice "…спестяваш половината калории"; re-ran → OK).
+  **proofread: ok** ("Проблемът"/"Линкът" пълен член; "не са кебапчетата"; comma before "а"/"ако"; "Pulsify"
+  kept Latin on-screen+caption, "Пулсифай" only in TTS).
+- **Caption (TikTok) — §15 CROSS-PROMO USED** (was explicitly deferred 11-24; not two in a row — 11-24
+  morning used standard CTA, 11-24 evening was educational/no-CTA): "Същите кебапчета, два различни обяда.
+  Проблемът не е месото, а гарнитурата: кебапчета с пържени картофки и хляб излизат към 850 калории, а със
+  салата — към 400. Смени само гарнитурата. / Ти с какво ги ядеш — картофки или салата? Пиши отдолу. /
+  **Линкът към приложението е в Instagram @pulsifyfit 👆** / Източник: реален скан с Pulsify (кебапчета) +
+  USDA. / #кебапчета #калории #хранене #скара #фитнес" (concrete this-or-that comment bait per insights.md).
+- **Publish:** uploaded → uploads.postiz.com/79dr34R8Mh.mp4. **TikTok** post id **`cmwvs3yo10ku4o307hqhcpebq`**
+  (DIRECT_POST, --shortLink false §18, made_with_ai=true). **PUBLISHED 07:08Z** → https://www.tiktok.com/@pulsify8
+  (verified posts:list, state PUBLISHED, no error). Today's TikTok count: **1/2** (evening.sh adds #2).
+
+### YouTube Short — same BG file (§2/§3)
+- Title "Кебапчета: гарнитурата почти удвоява обяда | Калорийна битка" (60 chars). Description: 2-3 sentences
+  + **FULL** Play link (https://play.google.com/store/apps/details?id=com.apex.fitness, --shortLink false) +
+  Komiku/Pixabay(srb_films) credits + Източник. made_with_ai=true. **Scheduled 2026-11-25T10:00:00Z** (past
+  the ~08:00 UTC new-channel quota reset, like 11-23/11-24) — id **`cmwvs4jxo0kuro307zygux4i8`**, state QUEUE.
+  **VERIFY after 10:00 UTC.**
+
+### INSTAGRAM educational carousel — series "Етикетът казва": декодиране на етикетите (EU Reg 1924/2006)
+- **Different topic** from the TikTok (§3); **food/nutrition** (not two habits-posts in a row — 11-24 IG was
+  the sleep habit reel). Educational, **no app, no app CTA**, ends on "Запази си го". 6 slides 1080x1350
+  (out/2026-11-25/carousel.py). Establishes the named §4 series "Етикетът казва" (fresh — not used before).
+- Slides: 1 HOOK "«Фит», «без захар», «протеинов» — какво значат наистина?" → 2 «Без захар» = под 0,5 г/100 г
+  → 3 «Без добавена захар» ≠ без захар → 4 «Източник на протеин» ≥12% от калориите, «Високо» ≥20% →
+  5 «Light/лайт» = поне 30% по-малко → 6 CTA "Обърни опаковката / Запази си го" + source.
+- **Accuracy (§5):** EU nutrition-claim thresholds **web-verified** against the regulation (sugars-free ≤0,5
+  g/100 g; no-added-sugar; source-of-protein ≥12% energy; high-protein ≥20%; light = ≥30% reduction).
+  **Източник on last slide + caption: Регламент (ЕО) 1924/2006.** Sources: food.ec.europa.eu nutrition-claims;
+  legislation.gov.uk/eur/2006/1924 Annex.
+- **QG:** 1080x1350 ✓; 6 slides (5-7 ✓); slide 1 works without context; one idea/slide ≤~12 words; last slide
+  = save (no app CTA) ✓. **made_with_ai=false** (motion-graphic text, no AI content). hunspell+**editor: OK**.
+- **Caption:** "Етикетите отпред продават, но истината е отзад. «Без захар» значи под 0,5 г захар на 100 г,
+  «без добавена захар» не значи без захар, а «протеинов» е само реклама, ако протеинът е под 20% от
+  калориите. Обърни опаковката и гледай калориите и захарите на 100 г. / Коя от тези реклами най-много те е
+  подвеждала? Пиши отдолу. / Запази си го за следващото пазаруване. / Източник: Регламент (ЕО) 1924/2006 за
+  хранителните претенции. / #етикети #хранене #калории #захар #протеин"
+- **Publish:** 6 slides uploaded; **IG carousel** post id **`cmwvsb5gs0ky5o30732gskrur`** (post_type=post,
+  made_with_ai=false), sched 07:13Z. **PUBLISHED** → https://www.instagram.com/p/DgJ93jgllYw/ (verified).
+
+### INSTAGRAM stories (3 frames) — this-or-that → reveal → CTA (rotates off 11-24 myth/fact)
+- out/2026-11-25/stories.py, 1080x1920, text inside y 260–1660. Real food photos + real app screen only (§9).
+  Say "стори" ✓. Ties to today's TikTok (§9 "a teaser of today's post"). NOTE: posts:create rejects an EMPTY
+  -c for stories → gave each a short content line (fixed after the first empty-content attempt silently
+  no-op'd).
+- 1 (this-or-that) split fries/salad + "Кебапчета с пържени картофки или със салата? / Кой обяд е двойно
+  по-калоричен?" — id `cmwvsdjo80lxrpj07w9pfutjx`, **PUBLISHED** (.../4038031108021315677).
+- 2 (reveal) fries+salad thumbs + "С картофки и хляб ≈ 850 ккал / Само със салата ≈ 400 / Виновна е
+  гарнитурата, не месото" — id `cmwvsdsax0ly5pj07hqgvja19`, **PUBLISHED** (.../4038031106469433230).
+- 3 (CTA) real app scan screen + "Снимай чинията и виж калориите за секунди / Pulsify · линк в профила" —
+  id `cmwvsdsx00kzbo307d0jatdof`, **PUBLISHED** (.../4038031618644311697). Rotation next time:
+  behind-the-scenes or a quick tip.
+
+**Publish verification (07:17Z):** TikTok ✓ PUBLISHED, IG carousel ✓ PUBLISHED, IG story 1/2/3 ✓ PUBLISHED.
+YouTube Short QUEUE for its 10:00Z slot (new-channel quota pattern — verify after 10:00 UTC, as 11-23/11-24).
+
+**Dish/topic log (30-day no-repeat):** shopska (11-22), баница (11-22 eve), дюнер (11-23), чийзбургер (11-23),
+meal-timing myth (11-23 eve), 5 cheap proteins (11-23 IG), мюсли купа 614 (11-24), сън↔глад (11-24 IG),
+варен vs пържен картоф 87/312 (11-24 eve), **кебапче меню / гарнитура-битка 850 vs 400 (11-25, NEW)**,
+**етикетни претенции / «Етикетът казва» (11-25 IG, NEW)**. Hooks in hooks.md, credits in credits.md,
+numbers in numbers.md, music in music.md.
+
+---
+
 ## 2026-11-24 (Tue) — EVENING TikTok (educational): "Пърженето утроява калориите на картофа"
 
 **Run:** evening (evening.sh, ~19:59 Sofia / 17:59 UTC). TikTok ONLY (no IG/YouTube/stories/review, §7).
