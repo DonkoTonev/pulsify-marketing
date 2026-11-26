@@ -47,4 +47,8 @@ https://archive.org/details/Komiku-ItsTimeForAdventureVol2
   Thematic "battle" track; not used since 11-23 (not back-to-back). Next video: avoid upbeat_1 back-to-back.
   (IG carousel/stories are silent images — no music track.)
 - 2026-11-25 evening: **chill_6 (CalmPills "Introverted Chords") — "Фрапето крие повече" течни-калории edu TikTok (no-voice, 0.35).**
-  Fresh track (never used before); calm café mood. Not upbeat_1 (morning) / upbeat_3 (11-24 eve). SFX: ding (ingredients) + impact (170 lock). Next video: avoid chill_6 back-to-back.
+  Fresh track (never used before); calm café mood. Not upbeat_1 (morning) / upbeat_3 (11-24 eve). SFX: ding (ingredients) + impact (170 lock). Next video: avoid chill_6 back-to-back. (NOTE: this evening post FAILED to publish — run failed — but the track still counts as used.)
+- 2026-11-26: **upbeat_2 (Komiku "Tension") — morning app TikTok "Как изглеждат 500 калории" (no-voice, 0.33).**
+  Not chill_6 (11-25 eve) / upbeat_1 (11-25 morn) — no back-to-back. SFX: ding (850 reveal) + impact (93 reveal).
+  **chill_4 (CalmPills "The Healing Lake") — IG reel "Мит или факт: вода" (voice Kalina, 0.12).** FRESH track
+  (never used before), calm water mood. Next video: avoid upbeat_2 / chill_4 back-to-back.

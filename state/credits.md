@@ -91,3 +91,30 @@ Music: upbeat_1.mp3 = Komiku "Battle Theme" (CC0, 0.12 under voice — thematic 
 SFX: reused synthesized ding.wav (running-total stamps) + impact.wav (final reveal) — see 2026-11-23-evening.
 IG carousel "Етикетът казва" + stories: motion-graphic text slides (no stock) + the Pixabay food photos
   above + the real app screenshot (stories frame 3). No new external media.
+
+## 2026-11-26 assets — Pixabay Content License (free use; logged per §10.4)
+MORNING app TikTok "Как изглеждат 500 калории" (салата vs шоколад, калорийна плътност):
+Video b-roll (hook, frame 0):
+- salad_375399.mp4 — hands tossing a bright colourful salad bowl, vertical, in motion.
+  Author **flutie8211** (id 375399), https://pixabay.com/videos/id-375399/ (people as atmosphere, no implied
+  endorsement — §5).
+Food photos (assets/food/):
+- chocolate.jpg = dark chocolate bar on black. Author **StockSnap** (id 2562840),
+  https://pixabay.com/photos/dark-chocolate-bar-food-black-dark-2562840/ — reveal thumb + stories.
+- salad.jpg = fresh green salad plate, **stevepb** (id 374173, credited 11-25) — REUSED as today's REAL
+  Pulsify AI-scan input (450 г = 265 ккал, точност 84%) + reveal/story thumb.
+App card: real Pulsify scan screenshots (salad_top.png / salad_macros.png → media/card_result.png crop), test acct.
+Music: upbeat_2.mp3 = Komiku "Tension" (CC0, 0.33, no-voice). SFX: reused synthesized ding.wav (850 reveal) +
+impact.wav (93 reveal) — see 2026-11-23-evening section.
+
+IG educational Reel "Мит или факт: 8 чаши вода на ден?" (hydration):
+- water_glass_pour_223122.mp4 — hand pouring water + lemon into a glass, vertical, in motion (hook frame 0).
+  Author **Afzaal0001** (id 223122), https://pixabay.com/videos/id-223122/
+- glass_of_water_2032980.jpg — hand pouring water into a glass (close card bg).
+  Author **congerdesign** (id 2032980), https://pixabay.com/photos/bottle-mineral-water-glass-pour-2032980/
+Music: chill_4.mp3 = CalmPills "The Healing Lake" (CC0, 0.12 under voice). Voice: bg-BG-KalinaNeural (AI).
+NOTE: the usual Pixabay pollution was vetted out and NOT used — "almonds"=almond *blossoms*, "fruit bowl"=a
+bear + an AI-looking flower/yogurt bowl, "drinking water"=lions at a watering hole, "chocolate bar"=bokeh/a
+barista/a moonlit sea, "walnuts"=a Christmas staircase, veg heap 223334 = a dark plant scene. The chocolate
+donut clip (113707) was too stylised/abstract for frame 0 — dropped. Probed BEFORE locking the premise (§10.4).
+IG stories: real chocolate.jpg + salad.jpg + the real app scan screenshot (frame 3). No new external media.

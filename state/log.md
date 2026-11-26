@@ -1,5 +1,130 @@
 # Post log
 
+## 2026-11-26 (Thu) — DAILY RUN (run.sh): morning app TikTok + YouTube Short + IG edu Reel + stories
+
+**Run:** daily (run.sh, ~08:40 Sofia / 06:40–07:51 UTC). **Thursday** ⇒ NOT Monday, so no weekly review.
+Posts per §3 for Thu: morning **app-integrated** TikTok ("Как изглеждат 500 калории", §4 Thu) + YouTube Short
+(same file) + IG **educational Reel** (Tue/Thu/Sat; different topic, 15–40 s, not a TikTok re-upload) + IG
+stories. Output: out/2026-11-26/. Evening TikTok is a separate run (evening.sh). No experiments/trends active
+(experiments.md & trends.md still absent — research.sh hasn't produced them). No new analytics screenshots.
+**Pre-flight finding:** errors.md logged "2026-11-25 evening run failed"; verified via posts:list that the
+**11-25 evening фрапе TikTok never published** (only 11-25 morning TikTok went live). hooks.md/numbers.md hold
+the фрапе row but it's NOT live — flagged for the Monday review (don't count фрапе as a published post).
+Yesterday's YT short (j5ye8Iudbc8) confirmed PUBLISHED.
+
+### MORNING TikTok (app-integrated) — "Как изглеждат 500 калории": 850 г салата vs 93 г шоколад
+- **Premise step (§10.1):** 10 "500 калории volume" candidates scored (stranger-stop / comment-share /
+  BG-relatable). (1) **салата vs шоколад (8.4)** ✓ winner — footage-validated, fresh subjects, honest
+  real-scan numbers, biggest *reliable* volume shock. (2) ядки vs зеленчуци 8.3 — KILLED (Pixabay "almonds"
+  = almond *blossoms*, "fruit bowl" = a bear/AI food). (3) донът vs зеленчуци 8.0 — donut footage too
+  stylized/abstract for frame 0. (4) пуканки vs шоколад 7.9 — popcorn density caveats. (5) шоколад vs плодове
+  8.0 — fruit footage failed. (6) чипс vs салата 7.8 — chips footage polluted. (7) 3-way fries/баница/салата
+  7.5 — fries/баница blocked (30-day) + cluttered. (8) "колко салата за 1 шоколад" single-reveal 8.1.
+  (9) газирано vs храна 7.4 — did фрапе течни-калории 11-25 eve. (10) "500 ккал закуска" narrow 7.2.
+  **Footage probed BEFORE locking** (11-24 lesson) — confirmed the pollution and PIVOTED foods to what
+  Pixabay actually supports (salad-tossing clip ✓, chocolate stills ✓).
+- **30-day no-repeat (§6):** blocked dishes (shopska/баница/дюнер/чийзбургер/мюсли/картоф-fries/кебапче) all
+  avoided as *subjects*. New subjects **салата + шоколад**; new topic **калорийна плътност / обем за 500 ккал**.
+- **Real scan (numbers.md):** scanned assets/food/salad.jpg → app: **салата 450 г = 265 ккал**, 15.4 P /
+  16.5 C / 16.0 F, **точност 84%** (~59 ккал/100 г). App itemised the veg densities (маруля 15, спанак 23,
+  домати 18, краставици 16 ккал/100 г) + read "малини и бяло сирене"+зехтин (~200 ккал от ост. 2 съставки →
+  265 общо). ONE daily free AI scan used (§ cap). **record_app.py deletes out/<date>/raw on cleanup → it wiped
+  the fetched Pixabay media; re-fetched the hook clip into out/<date>/media/ (not raw/).** (noted for future.)
+- **Honest numbers (sourced, portions shown):** 500 ккал = **850 г салата** (≈2 купи, from the real 59 ккал/100 г
+  scan) = **93 г шоколад** (едно блокче, USDA 535 ккал/100 г). Same 500 ккал, **~9× повече храна** (850/93).
+  Framed positively (no shaming; density → засищане), no personal calorie target.
+- **Format / beats (§16-tight, no-voice, app once ~1/3 in, payoff LAST, loop; 4 beats, 16.0 s):**
+  A HOOK 3.3 s (salad tossing in motion, push-in) type-3 **challenge** "Познай колко салата са 500 калории" →
+  **APP 3.3 s** real Pulsify scan card (салата 450 г = 265 ккал · точност 84%; "Зеленчуците: 15–23 ккал на
+  100 г") — app once, starts 3.3 s (after 3 s), midpoint ~5 s ≈ 1/3 → C 4.5 s REVEAL salad amount "500 калории
+  салата = 850 г (≈2 пълни купи)" + ding + open loop "А 500 калории шоколад?" → D 4.9 s PAYOFF "500 калории
+  шоколад = 93 г · едно блокче · салатата е 9 пъти повече храна" + impact + small CTA pill "Сканирай чинията с
+  Pulsify" (§16-allowed), loops to salad. Built via out/2026-11-26/compose_morning.py. Visual variety §10.4 =
+  (a) real app recording + (b) real Pixabay footage + (c) motion graphics.
+- **Hook (frame 0):** "Познай колко салата са 500 калории". **Hook type (§17) = 3 (challenge/guess)** —
+  deliberately picked to fix the rotation (type 1 was over-represented x4).
+- **Voice:** **NONE** (no-voice: big captions + music + 2 SFX). Rationale: last PUBLISHED TikTok (11-25 morning)
+  had voice → alternate to no-voice; ALSO de-confounds morning-vs-voice for the Monday review (mornings were all
+  voiced, evenings all voiceless — this is the first **no-voice morning**). No AI voice + no AI realistic
+  imagery → **video_made_with_ai=false** (honest).
+- **Music:** assets/music/upbeat_2.mp3 (Komiku "Tension", CC0), 0.33 (no voice). Not chill_6 (11-25 eve) /
+  upbeat_1 (11-25 morn) — no back-to-back. SFX: synth ding (850 reveal) + impact (93 reveal).
+- **Quality gate (§10.5/§16):** dur 16.0 s ✓ (12-20). First-2 s = full-bleed salad tossing in motion +
+  challenge hook, no app/logo/letterbox/black ✓ (frame-strip checked). Contact sheet: motion every beat, app
+  once & after 3 s & ~1/3 in, NO end card/QR (small CTA pill only, §16), payoff (tiny 93 г) in the LAST beat ✓.
+  Audio mean -21.3 / max -9.8 dB (no clip). Numbers match numbers.md; portions on every card. Scores
+  **H8 / C8 / Surprise8 / Pace7 / Share8 / Prod8 = avg 7.83, hook 8 → PASS** (one build). Weakest = pace (app/C/D
+  are card beats). **hunspell: ok** (only Latin/Pulsify/units/скан/калорийна flags). **editor: OK** (§20
+  fresh-context editor returned OK first pass, no changes). **proofread: ok** (пълен член "салатата"; "те засища"
+  = теб/acc. ✓; "Pulsify" Latin on-screen+caption, no TTS so no "Пулсифай" needed).
+- **Caption (TikTok) — standard CTA (NOT §15 cross-promo: 11-25 morning used cross-promo → not two in a row):**
+  "Същите 500 калории изглеждат много различно. Цяла купа салата (около 850 г) и едно малко блокче шоколад
+  (93 г) имат еднакви калории, но салатата е 9 пъти повече храна и те засища много по-дълго. По-ниската
+  калорийна плътност помага да ядеш повече и да се чувстваш сит. / Ти какво избираш за междинна закуска? Пиши
+  отдолу. / Потърси Pulsify в Google Play 🔍 / Източник: реален скан с Pulsify (салата, 450 г = 265 ккал) и
+  USDA (шоколад около 535 ккал на 100 г). / #калории #салата #хранене #здравословно #фитнес"
+- **Publish:** uploaded → uploads.postiz.com/EhwQbfm7xo.mp4. **TikTok** post id **`cmwx82jww1ar6o307senfrilm`**
+  (DIRECT_POST, --shortLink false §18, video_made_with_ai=false). **PUBLISHED ~07:21Z** →
+  https://www.tiktok.com/@pulsify8 (verified posts:list). Today's TikTok count: **1/2** (evening.sh adds #2).
+
+### YouTube Short — same BG file (§2/§3)
+- Title "Как изглеждат 500 калории? Цяла купа салата или 93 г шоколад" (60 chars). Description: 2-3 sentences +
+  **FULL** Play link (--shortLink false) + Pixabay(flutie8211/stevepb/StockSnap)/Komiku credits + Източник.
+  **made_with_ai=false** (no AI voice/imagery). **Scheduled 2026-11-26T10:00:00Z** (past the ~08:00 UTC
+  new-channel quota reset, as 11-23/24/25) — id **`cmwx83bfi1boypj07ot9dpo0k`**, state QUEUE. **VERIFY after
+  10:00 UTC.** (Reuses the §16-tight TikTok file, Play link in the description — matches recent practice.)
+
+### INSTAGRAM educational Reel — series "Мит или факт": 8 чаши вода на ден? (hydration)
+- **Different topic** from the TikTok (hydration, not calories; §3). Educational, **no app, no CTA**, ends
+  "Запази си го". 22.8 s (15–40 ✓), 1080x1920 (out/2026-11-26/compose_reel.py). Named §4 series "Мит или факт".
+- Beats: A HOOK (water+lemon pour in motion, "МИТ или ФАКТ · 8 чаши вода на ден?") → B **МИТ** "Трябва да пиеш
+  точно 8 чаши (2 л) вода всеки ден" → C **ФАКТ** "Около 2 л за жени, 2,5 л за мъже (EFSA), но ОБЩО — с всички
+  напитки и ~20–30% от храната" → D CLOSE "Няма вълшебно число. Пий според жаждата, активността и жегата. /
+  Запази си го." Visual variety §10.4 = (b) real Pixabay water footage + (c) motion-graphic cards.
+- **Voice:** **bg-BG-KalinaNeural** (rotation: last voice Borislav 11-25 → Kalina) — restores voice alternation
+  + gives the Monday review a voiced IG data point. AI voice → **made_with_ai=true**. No app → no "Пулсифай".
+- **Music:** chill_4 (CalmPills "The Healing Lake", CC0), 0.12 under voice — fresh track, calm water mood,
+  not upbeat_2 (today's TikTok).
+- **Accuracy (§5):** EFSA Dietary Reference Values for water (2010): AI **2.0 L/ден жени, 2.5 L/ден мъже**
+  (total water, ~20–30% from food) — web-verified. **Източник in caption + on the FACT card: EFSA.**
+- **QG:** 22.8 s ✓; hook = belief-challenge; no app/CTA ✓; "Запази си го" close ✓. Scores H8/C8/S7/P7/Sh7.5/Pr8
+  ≈ avg 7.5, hook 8 → PASS. **hunspell: ok**; **editor: OK after 2 fix rounds** (§20: членуване "жаждата/
+  активността/жегата"; десетична запетая "2,5 л"). **Also fixed a render defect:** ❌/✅/🔖 emoji rendered as
+  tofu in the PIL font → stripped from on-screen text (red/green badge colours convey МИТ/ФАКТ; emoji kept only
+  in captions where the platform renders them).
+- **Caption:** "Мит или факт: трябва да пиеш точно 8 чаши вода на ден? По-скоро мит. EFSA препоръчва около 2 л
+  вода на ден за жени и 2,5 л за мъже, но това е общо количество — включва всички напитки и водата от храната,
+  която е около 20–30% от нуждите. Няма едно вълшебно число за всеки: нуждите зависят от теглото, активността и
+  жегата. / Най-простият ориентир е да пиеш, когато си жаден, и повече при спорт и горещо време. / Колко вода
+  пиеш обикновено на ден? Пиши отдолу. / Запази си го за следващия път. / Източник: EFSA, Dietary Reference
+  Values for water (2010). / #вода #хидратация #здраве #митилифакт #хранене"
+- **Publish:** uploaded → uploads.postiz.com/7LukqWz7zH.mp4. **IG Reel** post id **`cmwx8wldg1c15pj07rv03740g`**
+  (post_type=post, made_with_ai=true). **PUBLISHED ~07:45Z** → https://www.instagram.com/reel/DgMmVEVh8II/ (verified).
+
+### INSTAGRAM stories (3 frames) — guess the calories → reveal → CTA (rotates off 11-25 this-or-that)
+- out/2026-11-26/stories.py, 1080x1920, text inside y 260–1660. Real food photos + real app screen only (§9).
+  Say "стори" ✓. Ties to today's TikTok (§9). No emoji in rendered text (tofu). Each story got a short -c line
+  (empty -c is rejected, 11-25 lesson). **editor: OK after 1 fix** ("скенирай" → "сканирай").
+- 1 (teaser/guess) chocolate photo + "Колко калории има в едно блокче шоколад? / Познай наум... после виж
+  следващото стори" — id `cmwx918w51by5qd07rd4yjpm9`, **PUBLISHED** (.../4038773348104553585).
+- 2 (reveal) salad+chocolate split + "500 калории / салата 850 г · шоколад 93 г / Същите калории, но салатата
+  е 9 пъти повече храна и те засища по-дълго" — id `cmwx919fe1c35pj07mgoleubo`, **PUBLISHED** (.../4038773862217193706).
+- 3 (CTA) real app scan screen + "Не гадай, сканирай / Снимай чинията и виж калориите за секунди / Pulsify ·
+  линк в профила" — id `cmwx919yn1by6qd0728u4chgi`, **PUBLISHED** (.../4038774370248094689). Rotation next time:
+  myth/fact or behind-the-scenes.
+
+**Publish verification (07:51Z):** TikTok ✓ PUBLISHED, IG Reel ✓ PUBLISHED, IG story 1/2/3 ✓ PUBLISHED.
+YouTube Short QUEUE for its 10:00Z slot (new-channel quota pattern — verify after 10:00 UTC, as 11-23/24/25).
+
+**Dish/topic log (30-day no-repeat):** shopska (11-22), баница (11-22 eve), дюнер (11-23), чийзбургер (11-23),
+meal-timing myth (11-23 eve), 5 cheap proteins (11-23 IG), мюсли купа 614 (11-24), сън↔глад (11-24 IG),
+варен vs пържен картоф 87/312 (11-24 eve), кебапче меню / гарнитура-битка 850 vs 400 (11-25), етикетни
+претенции / «Етикетът казва» (11-25 IG), фрапе течни-калории (11-25 eve — **NOT published, run failed**),
+**салата vs шоколад / 500-калории обем (11-26, NEW)**, **8 чаши вода мит / «Мит или факт» (11-26 IG, NEW)**.
+Hooks in hooks.md, credits in credits.md, numbers in numbers.md, music in music.md.
+
+---
+
 ## 2026-11-25 (Wed) — DAILY RUN (run.sh): morning app TikTok + YouTube Short + IG edu carousel + stories
 
 **Run:** daily (run.sh, ~08:40 Sofia / 06:37–07:15 UTC). **Wednesday** ⇒ NOT Monday, so no weekly review.
