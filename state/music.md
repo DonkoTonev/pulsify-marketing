@@ -52,3 +52,6 @@ https://archive.org/details/Komiku-ItsTimeForAdventureVol2
   Not chill_6 (11-25 eve) / upbeat_1 (11-25 morn) — no back-to-back. SFX: ding (850 reveal) + impact (93 reveal).
   **chill_4 (CalmPills "The Healing Lake") — IG reel "Мит или факт: вода" (voice Kalina, 0.12).** FRESH track
   (never used before), calm water mood. Next video: avoid upbeat_2 / chill_4 back-to-back.
+- 2026-11-26 evening: **chill_7 (CalmPills "Painting Twilight") — "Ако ядеш бързо" eating-speed edu TikTok (voice Borislav, 0.12).**
+  FRESH track (first use), calm/reflective mood. Not upbeat_2 (morning) / chill_4 (IG reel) — no back-to-back.
+  SFX: ding (C "Защо?" open loop) + impact (D "20 минути" lock). Next video: avoid chill_7 back-to-back.

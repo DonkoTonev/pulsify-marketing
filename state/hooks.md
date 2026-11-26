@@ -33,6 +33,7 @@ web claims are secondary.
 | 2026-11-25 | TikTok evening (edu) | "Фрапето крие повече, отколкото мислиш" | vertical iced-coffee/frappe close-up in motion, push-in | 8/8/7.5/7.5/8/8 | **NOT published (run failed)** |
 | 2026-11-26 | TikTok morning (app) | "Познай колко салата са 500 калории" | hands tossing a bright colourful salad bowl, in motion, push-in | 8/8/8/7/8/8 | (pending) |
 | 2026-11-26 | IG reel (edu) | "8 чаши вода на ден?" (Мит или факт) | hand pouring water + lemon into a glass, in motion | 8/8/7/7/7.5/8 | (pending) |
+| 2026-11-26 | TikTok evening (edu) | "Ако ядеш бързо, гледай това" | person twirling/eating pasta on a fork, close-up in motion, push-in | 8/8/8/7.5/8/8 | (pending) |
 
 Hook-type rotation (§17): 2026-11-23 morning = type 3 (challenge/guess); 2026-11-23 evening =
 type 1 (contrast/surprise); 2026-11-24 TikTok = type 1 (belief-challenge — reused our day-1
@@ -42,9 +43,11 @@ type 1. 2026-11-25 TikTok morning = **type 2 (mistake/correction — "blaming th
 rotated off 11-24 morning's type 1. 2026-11-25 TikTok evening = **type 1 (contrast/surprise — "крие
 повече, отколкото мислиш")**, rotated off the morning's type 2. 2026-11-26 TikTok morning = **type 3
 (challenge/guess — "Познай колко салата са 500 калории")**, deliberately picked to rebalance (type 1 was
-over-represented). 2026-11-26 IG reel = **belief-challenge myth-question ("8 чаши вода на ден?")**. So far
-logged: type 1 (x4), type 2 (x3), type 3 (x2), type 4 (x1) — still favour **type 4 / type 3** next to even
-it out. Review 3-second retention once native analytics exist.
+over-represented). 2026-11-26 IG reel = **belief-challenge myth-question ("8 чаши вода на ден?")**.
+2026-11-26 TikTok evening = **type 4 (callout — "Ако ядеш X, гледай това")**, rotated off the morning's
+type 3 AND picked to even the rotation (type 4 was the least used). So far logged: type 1 (x4), type 2 (x3),
+type 3 (x2), type 4 (x2) — now better balanced; **favour type 3 / type 4** next (type 1 still over-represented).
+Review 3-second retention once native analytics exist.
 Keep alternating; the Monday review keeps whichever type holds 3-second retention best.
 Note: "мислиш [храна] е лека?" is now used twice (shopska 11-22, мюсли 11-24) — reusing the SHAPE,
 never the exact words; the Monday review should check if it still over-performs.

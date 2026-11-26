@@ -1,5 +1,76 @@
 # Post log
 
+## 2026-11-26 (Thu) — EVENING TikTok (educational): "Ако ядеш бързо, гледай това" (eating speed & satiety)
+
+**Run:** evening (evening.sh, ~19:5x Sofia / 17:52–17:57 UTC). TikTok ONLY (no IG/YouTube/stories/review, §7).
+This is today's **2nd** TikTok (max 2/day) — verified exactly 1 existed before this run (morning салата-vs-шоколад
+app post `cmwx82jww1ar6o307senfrilm`, PUBLISHED 07:21Z). **Different topic AND format** from the morning:
+morning = app-integrated calorie-density scan ("Как изглеждат 500 калории", салата/шоколад); evening =
+educational behavioural tip (eating speed & satiety timing — no app, no CTA). Output: out/2026-11-26-evening/.
+No experiments/trends active (experiments.md & trends.md still absent). No new analytics screenshots.
+
+- **Premise step (§10.1):** 10 educational candidates scored (stranger-stop / comment-share / BG-relatable).
+  Winner **eating speed — "Ако ядеш бързо, гледай това" (8.3)** ✓: fresh topic (hunger & satiety, never done),
+  universal BG relatability (everyone eats fast), safe (§5), clean single-number payoff (≈20 мин) and strong
+  frame-0 footage. Runners-up: eating from the package / portion illusion (8.1 — chips footage historically
+  polluted), distracted/TV eating (8.0). Killed: anything overlapping today's density/salad theme, liquid
+  calories (near 11-25 фрапе), breakfast-protein (near "hidden calories"). Kept it a **food/nutrition** topic
+  (not training/habits) because this morning's IG was a habits post (hydration) — avoids two habits in a row (§3).
+- **30-day no-repeat (§6):** new topic **eating speed / ситост-timing**; distinct from сън↔глад (11-24, a sleep
+  mechanism) and today's calorie-density. No dish calorie number used (behavioural topic).
+- **Accuracy (§5, web-verified):** satiety signal reaches the brain after ~15–20 min (gut-brain hormones);
+  faster eating is **associated** with higher energy intake & body weight (meta-analysis: OR ~2.15 for obesity
+  in fast eaters, BMI diff ~1.78 kg/m²). Framed carefully as association + a healthy habit ("яж по-бавно") — NO
+  personal calorie target, NO weight-loss promise, NO shaming. **Източник on-screen (D card) + caption:**
+  Ohkuma и кол., International Journal of Obesity (2015), + ситост-reviews. (Nature/PubMed pages were auth-gated;
+  numbers taken from the indexed meta-analysis abstracts.)
+- **Format / beats (§16-tight, voice, payoff in the LAST beat, loop; 4 beats, 14.40 s):**
+  A HOOK 3.0 s (person twirling pasta on a fork, push-in) type-4 **callout** "Ако ядеш бързо, гледай това" →
+  B 3.3 s (pasta to the mouth) "Изяждаш чинията за 5 минути" / "и посягаш за още" → C 3.2 s CARD open loop
+  "Но мозъкът ти още не усеща, че си сит" + "Защо?" (ding) → D 4.9 s PAYOFF count-up 0→20 "минути" / "докато
+  мозъкът усети ситост" / fix "Яж по-бавно и ще се наситиш с по-малко" / "Запази си го" (impact on the 20 lock)
+  + small Източник line, loops to the pasta. Built via out/2026-11-26-evening/compose_evening.py (per-segment
+  ffmpeg ultrafast + concat stream-copy; count-up = 11 PNG stamps). Visual variety §10.4 = (b) real Pixabay
+  eating footage + (c) motion-graphic cards.
+- **Hook (frame 0):** "Ако ядеш бързо, гледай това". **Hook type (§17) = 4 (callout)** — rotated off the
+  morning's type 3 AND picked to even the rotation (type 4 was least used: x1→x2).
+- **Voice:** **bg-BG-BorislavNeural** (rotation: last voice Kalina 11-26 IG → Borislav). Also **alternates off
+  this morning's NO-voice TikTok** → first **voiced evening** TikTok, which (with the first no-voice morning
+  today) **de-confounds time-of-day from voice** for the Monday review (historically mornings=voiced,
+  evenings=voiceless). TTS: numbers as words ("пет минути", "двайсет минути"), rate +10%, no Latin/no "Pulsify"
+  (educational). AI voice → **video_made_with_ai=true**.
+- **Music:** assets/music/chill_7.mp3 (CalmPills "Painting Twilight", CC0), 0.12 under voice. FRESH track (first
+  use); not upbeat_2 (morning) / chill_4 (IG) — no back-to-back. SFX: ding (C "Защо?") + impact (D 20-lock).
+- **Quality gate (§10.5/§16):** dur 14.40 s ✓ (12–20). First-2 s = full-bleed pasta + hand in motion +
+  callout hook, no app/logo/letterbox/black ✓ (frames 0.0–2.0 checked). Contact sheet (1/s): motion every beat
+  (eating A/B, count-up + staged reveals C/D), **NO app** (educational), **NO end card/QR**, payoff (20 мин +
+  fix) only in the LAST beat ✓. Audio mean -24.5 / max -6.4 dB (no clip); voice+music+2 SFX present. Scores
+  **H8 / C8 / Surprise8 / Pace7.5 / Share8 / Prod8 = avg 7.92, hook 8 → PASS** (one build, no re-render).
+  Weakest = the C card (quietest beat) but it carries the "Защо?" open loop into the payoff. **hunspell: ok**
+  (only Latin source words + colloquial "двайсет" in the TTS line). **editor: OK** (§20 fresh-context editor,
+  OK first pass, no changes). **proofread: ok** (пълен член "Сигналът/мозъкът"; "ти трябва" dative; comma before
+  "отколкото/затова/че"; no "Pulsify" — educational).
+- **Caption (TikTok, educational — no app CTA; §15 cross-promo N/A for educational):** "Ако изяждаш чинията за
+  5 минути, вероятно ядеш повече, отколкото ти трябва. Сигналът за ситост стига до мозъка чак след около 20
+  минути, затова бързото хранене лесно значи повече калории. Остави вилицата между хапките и дъвчи по-бавно. /
+  За колко минути изяждаш обяда си? Пиши отдолу. / Запази си го за следващото хранене. / Източник: мета-анализ
+  за скоростта на хранене и теглото (Ohkuma и кол., Int. Journal of Obesity, 2015). / #хранене #ситост #навици
+  #калории #фитнес" (concrete "за колко минути" comment prompt per insights.md).
+- **Experiment:** none active (experiments.md still absent — research.sh hasn't run).
+- **Publish:** uploaded → uploads.postiz.com/Vm60AqRAJQ.mp4. **TikTok** post id **`cmwxuqr7l07ddoc073vnmrs9w`**
+  (DIRECT_POST, --shortLink false §18, video_made_with_ai=true). **PUBLISHED 17:56:24Z** →
+  https://www.tiktok.com/@pulsify8 (releaseId v_pub_url~v2.7712540392114161703, no error; verified posts:list).
+  Today's TikTok count: **2/2** (morning салата app + this evening eating-speed edu).
+
+**Dish/topic log (30-day no-repeat):** shopska (11-22), баница (11-22 eve), дюнер (11-23), чийзбургер (11-23),
+meal-timing myth (11-23 eve), 5 cheap proteins (11-23 IG), мюсли купа 614 (11-24), сън↔глад (11-24 IG),
+варен vs пържен картоф 87/312 (11-24 eve), кебапче меню / гарнитура-битка 850 vs 400 (11-25), етикетни
+претенции / «Етикетът казва» (11-25 IG), фрапе течни-калории (11-25 eve — NOT published), салата vs шоколад /
+500-калории обем (11-26), 8 чаши вода мит / «Мит или факт» (11-26 IG), **eating speed / ситост-timing ~20 мин
+(11-26 eve, NEW)**. Hooks in hooks.md, credits in credits.md, music in music.md.
+
+---
+
 ## 2026-11-26 (Thu) — DAILY RUN (run.sh): morning app TikTok + YouTube Short + IG edu Reel + stories
 
 **Run:** daily (run.sh, ~08:40 Sofia / 06:40–07:51 UTC). **Thursday** ⇒ NOT Monday, so no weekly review.

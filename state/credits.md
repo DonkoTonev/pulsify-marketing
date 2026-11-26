@@ -118,3 +118,17 @@ bear + an AI-looking flower/yogurt bowl, "drinking water"=lions at a watering ho
 barista/a moonlit sea, "walnuts"=a Christmas staircase, veg heap 223334 = a dark plant scene. The chocolate
 donut clip (113707) was too stylised/abstract for frame 0 — dropped. Probed BEFORE locking the premise (§10.4).
 IG stories: real chocolate.jpg + salad.jpg + the real app scan screenshot (frame 3). No new external media.
+
+## 2026-11-26 EVENING assets — Pixabay Content License (free use; logged per §10.4)
+EVENING educational TikTok "Ако ядеш бързо, гледай това" (eating speed & satiety; NO app, educational):
+Pixabay VIDEO b-roll:
+- eating_meal_158597.mp4 — a person twirling and eating spaghetti/pasta with a fork, close-up, vertical,
+  in motion (HOOK frame 0 + beat B). Author **malik81** (id 158597), https://pixabay.com/videos/id-158597/
+  (people as atmosphere, educational, NO implied endorsement — §5.)
+Music: chill_7.mp3 = CalmPills "Painting Twilight" (CC0, 0.12 under voice) — FRESH track, first use.
+Voice: bg-BG-BorislavNeural (AI). SFX: reused synthesized ding.wav (C "Защо?" open loop) + impact.wav
+  (D "20 минути" lock) — see 2026-11-23-evening section.
+NOTE: the usual Pixabay pollution was vetted out and NOT used — "woman eating" = a decorated camel +
+  a salad-prep clip (off-subject, overlaps the morning salad topic); "eating pasta" 254753 = the dough/
+  food-prep clip already used 11-23; 335643 = a static plated dish (no eating action). Cards C/D are
+  motion-graphic text (no stock). Probed + frames visually vetted BEFORE locking (§10.4).
