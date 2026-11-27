@@ -1,5 +1,46 @@
 # Post log
 
+## 2026-11-28 (Sat 00:37 Sofia / Fri 22:37 UTC) — WEEKLY LONG YOUTUBE VIDEO (longform.sh): SKIPPED — Postiz still expired, cannot upload
+
+**Run:** longform (longform.sh, Sat 00:37 Sofia = Fri 22:37 UTC). This is the **first-ever longform slot** (the
+accounts launched Sun 11-22; no Saturday has occurred until now; `out/` has no prior longform dir). Planned per
+§8: one 8–10 min Bulgarian horizontal (1920×1080) educational YouTube video. **SKIPPED — not produced, not
+rendered, not published.**
+
+**Hard blocker (same account-level Postiz failure as this morning's run.sh and tonight's evening.sh).**
+Re-checked in pre-flight, still down:
+- `postiz auth:status` → "Credentials are expired or invalid. Please re-authenticate." (key fa0c76ca…).
+- `postiz integrations:list` → **401 {"msg":"No subscription found"}**.
+- `postiz posts:list` → **401 {"msg":"No subscription found"}**.
+- Network healthy (google.com → HTTP 200), so this is the **Postiz account subscription/key**, not us.
+
+YouTube upload runs **exclusively** through the Postiz YouTube integration (`cmwnxx71a07fyoa070b7t89w4`, via
+`postiz posts:create`); there is **no alternate direct-upload path** configured. With the API unauthenticated I
+can neither upload nor even **schedule** the video for later. So there is no "render now, queue it up" option.
+
+**Decision (§8 "skip the week and log why" + §18 "log as skipped with reason, don't loop, don't ask"):**
+deliberately **rendered nothing**. Reasoning, consistent with today's daily+evening runs: (1) the output is
+unpublishable right now and can't even be queued; (2) an 8–10 min 1080p render is the **single heaviest compute
+job of the week** (slow compose on this VM) — wasteful to spend hours on a file that can't go up; (3) §8 frames
+the topic around "this week's best posts," but this week's post stream was cut off mid-week by the same outage
+and the only review data so far (11-23) is day-one baselines, so the "best posts" signal is thin anyway — the
+video should be produced **fresh** once publishing works. No AI scan used (not needed; the daily 1/run scan stays
+preserved). No retry loop.
+
+**Material is NOT the blocker — plenty ready for when publishing returns.** `numbers.md` holds **12+ dishes with
+real Pulsify scans** (shopska 663/905 g, баница 2660/цяла тава, дюнер 653/340 g, мюсли купа 614/420 g, кебапче
+платер 2070/900 g + порция 300/130 g, листна салата 265/450 g, + USDA refs: чийзбургер, варен/пържен картоф,
+хляб, зелена салата, фрапе/черно кафе, шоколад). **Recommended first longform when restored:** §8 default
+**"Колко калории има в N български ястия"** (ranked countdown straight from `numbers.md`, with real portions,
+per-100 g density, and smart-swap takeaways) — a genuinely useful, non-template deep dive with all numbers
+already sourced. Keep it horizontal 1920×1080, hook in first 15 s, a chapter per dish, one mid + one end CTA.
+
+**Action required (unchanged across all three runs today):** owner renews the Postiz subscription + updates
+`POSTIZ_API_KEY` in `/home/ubuntu/pulsify-marketing/.env`, then confirm with `postiz auth:status`. Memory note
+`postiz-subscription-expired.md` kept (delete only when `auth:status` reports OK). Logged to state/errors.md.
+
+---
+
 ## 2026-11-27 (Fri) — EVENING TikTok run (evening.sh): BLOCKED — Postiz still expired, nothing published
 
 **Run:** evening (evening.sh, ~19:37 Sofia). TikTok only per §7. Planned: 1 educational TikTok, different
