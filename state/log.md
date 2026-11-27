@@ -1,5 +1,47 @@
 # Post log
 
+## 2026-11-27 (Fri) — DAILY RUN (run.sh): BLOCKED — Postiz subscription / API key expired, nothing published
+
+**Run:** daily (run.sh, ~08:37 Sofia / 06:37–06:45 UTC). **Friday** ⇒ NOT Monday, so no weekly review.
+Planned per §3 for Fri: morning **app-integrated** TikTok (§4 Fri "Сканирах го с AI") + YouTube Short (same
+file) + IG **educational carousel** (Mon/Wed/Fri/Sun) + IG stories. **NONE were produced or published** — a
+hard publishing blocker was found in pre-flight. No experiments/trends active (experiments.md & trends.md
+still absent). No new analytics screenshots in inbox/analytics/. No new owner footage in inbox/.
+
+**BLOCKER (hard stop, §6 "if posting fails twice, stop and log"):** the **Postiz subscription / API key is
+expired/invalid**, so ALL publishing is down. Verified twice across three endpoints:
+- `postiz auth:status` → "Credentials are expired or invalid. Please re-authenticate." (key fa0c76ca…, from
+  POSTIZ_API_KEY in .env).
+- `postiz integrations:list` → **401 {"msg":"No subscription found"}**.
+- `postiz posts:list` → **401 {"msg":"No subscription found"}**.
+Network is healthy (google.com → HTTP 200; pixabay 403 is the known UA quirk, not an outage), so this is the
+**Postiz account**, not our connectivity. I cannot fix a lapsed subscription or mint a valid key myself (no
+headless OAuth, and "No subscription found" is account-level) — it needs the **owner to renew the Postiz
+subscription and update POSTIZ_API_KEY in .env**.
+
+**Decision (per §6/§18):** stopped without retrying in a loop; logged every planned post as **SKIPPED
+(reason: publishing down)**. Deliberately did **NOT** use the 1/day AI scan and rendered **nothing** —
+content is day-specific and unpublishable today, and the scan is a capped resource better preserved for the
+next working run. The evening TikTok run (evening.sh) and tomorrow's run.sh will re-check auth and should
+publish normally once the key is restored.
+
+**Secondary issue found:** the `mail` binary is **not installed** on this VM, so run.sh's email alert
+(`mail -s … < state/errors.md`) has **never worked** (no state/errors-*.md archive has ever been created →
+errors.md was never emailed+moved). The owner has therefore not been receiving automated error alerts
+(incl. the 2026-11-25 evening failure). Because the built-in channel is broken, I tried to
+alert **ALERT_EMAIL (donkotonew@gmail.com) via the Gmail tool**. The Gmail **send was blocked by org
+approval policy** (headless run, nobody to approve), so I saved the alert as a **Gmail draft** in the
+owner's account instead (visible in Drafts). The most reliable surfacing is this errors.md/log.md via
+run.sh's git push to GitHub. Suggested fix: `sudo apt install mailutils`.
+
+**Could not verify** yesterday's scheduled YouTube Short (11-26, 10:00Z slot) — posts:list is down under the
+same auth failure.
+
+**Logged to state/errors.md.** Action required: owner renews Postiz subscription + updates POSTIZ_API_KEY,
+then confirm with `postiz auth:status`.
+
+---
+
 ## 2026-11-26 (Thu) — EVENING TikTok (educational): "Ако ядеш бързо, гледай това" (eating speed & satiety)
 
 **Run:** evening (evening.sh, ~19:5x Sofia / 17:52–17:57 UTC). TikTok ONLY (no IG/YouTube/stories/review, §7).
