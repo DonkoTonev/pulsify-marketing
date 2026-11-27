@@ -1,5 +1,26 @@
 # Post log
 
+## 2026-11-27 (Fri) — EVENING TikTok run (evening.sh): BLOCKED — Postiz still expired, nothing published
+
+**Run:** evening (evening.sh, ~19:37 Sofia). TikTok only per §7. Planned: 1 educational TikTok, different
+topic+format from this morning (this morning posted nothing — daily run was also blocked). **SKIPPED — not
+produced, not published.**
+
+**Same hard blocker as this morning's daily run (see entry below).** Re-checked in pre-flight, still down:
+- `postiz auth:status` → "Credentials are expired or invalid. Please re-authenticate." (key fa0c76ca…).
+- `postiz integrations:list` → **401 {"msg":"No subscription found"}**.
+- Network healthy (google.com → HTTP 200), so this is the **Postiz account subscription/key**, not us.
+
+**Decision (§6/§18):** stopped without looping; logged the evening TikTok as **SKIPPED (publishing down)**.
+Rendered **nothing** (day-specific, unpublishable; no point burning compute). No AI scan used (not needed
+for educational content anyway, and the 1/day scan stays preserved). No Postiz scheduling possible either,
+since the API itself is unauthenticated. Max 2 TikToks/day rule moot — 0 posted today. Next scheduled run
+(Sat 00:37 longform.sh, then Sat 08:37 run.sh) will re-check auth and publish once the key is restored.
+**Memory note `postiz-subscription-expired.md` kept** (delete only when `auth:status` reports OK).
+**Action required (unchanged):** owner renews Postiz subscription + updates POSTIZ_API_KEY in .env.
+
+---
+
 ## 2026-11-27 (Fri) — DAILY RUN (run.sh): BLOCKED — Postiz subscription / API key expired, nothing published
 
 **Run:** daily (run.sh, ~08:37 Sofia / 06:37–06:45 UTC). **Friday** ⇒ NOT Monday, so no weekly review.
