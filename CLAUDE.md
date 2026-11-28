@@ -201,3 +201,11 @@ Your goal: grow an audience that trusts Pulsify, then turn some of it into app d
 - Apply every correction, then run the editor again until it answers OK. Only then render.
 - Common traps to watch even before the editor: "ти" (на теб) vs "те" (теб): "това ти вдига калориите", "това те засища"; пълен член for the subject ("Дюнерът е..."); "ѝ" (на нея) vs "и" (and); no "й" for "ѝ".
 - Log "editor: OK" in state/log.md. If the editor cannot run, do not publish; log it in state/errors.md.
+
+## 21. Publishing without Postiz (added 2026-11-28, overrides every Postiz instruction above)
+- Postiz is no longer available. Never call `postiz`.
+- TikTok: upload each finished video with `python3 publish/tiktok_upload.py out/<date>/final.mp4`. It arrives in the owner's TikTok inbox as a DRAFT; the owner adds the caption and taps Publish. The API cannot set the caption.
+- For every uploaded video write the ready-to-paste caption (with hashtags) at the TOP of state/to-post.md, under a heading with date, slot (morning/evening) and the hook, so the owner can copy it from GitHub on the phone. Keep only the last 7 days in that file.
+- If the upload script fails, retry once; then log the full error in state/errors.md and stop.
+- Instagram, YouTube and Instagram stories are paused until their own publishing scripts exist: do not produce content for them, skip the weekly long YouTube video, and log "skipped: no publisher".
+- Analytics: Postiz analytics are gone. Use the owner's screenshots in inbox/analytics/ (section 14) for the Monday review.
