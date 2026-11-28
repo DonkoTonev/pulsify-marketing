@@ -1,5 +1,43 @@
 # Post log
 
+## 2026-11-28 (Sat) — DAILY RUN (run.sh): BLOCKED — Postiz still expired, nothing published (4th consecutive run)
+
+**Run:** daily (run.sh, ~08:37 Sofia / 06:37 UTC). **Saturday** ⇒ NOT Monday, so no weekly review.
+Planned per §3 for Sat: morning **educational** TikTok (Sat/Sun morning = educational, not app-integrated)
++ YouTube Short (same file) + IG **educational Reel** (Tue/Thu/Sat, 15–40 s, own topic) + IG stories.
+**NONE produced or published** — the same hard publishing blocker is still active. No active
+experiments/trends (experiments.md & trends.md absent). **No new analytics** in inbox/analytics/ (only
+/used). **No new owner footage** in inbox/ (only analytics/ + used/).
+
+**Hard blocker — unchanged, 4th consecutive blocked run** (Fri run.sh, Fri evening.sh, Sat 00:37
+longform.sh, now Sat 08:37 run.sh). Re-verified in pre-flight across all three endpoints:
+- `postiz auth:status`       → "Credentials are expired or invalid. Please re-authenticate." (key fa0c76ca…, **unchanged** in .env).
+- `postiz integrations:list` → **401 {"msg":"No subscription found"}**.
+- `postiz posts:list`        → **401 {"msg":"No subscription found"}**.
+- Network healthy (google.com → HTTP 200), so this is the **Postiz account subscription/key**, not us.
+The key in .env is still the same expired `fa0c76ca…` — **the owner has not renewed yet.**
+
+**Decision (§6 "if posting fails twice, stop and log" + §18 "log as skipped with reason, don't loop,
+don't ask"):** stopped without retrying in a loop; every planned post logged **SKIPPED (publishing down)**.
+Rendered **nothing** (content is day-specific and cannot be published or even queued — the Postiz API
+itself is unauthenticated, so there is no "render now, schedule for later" path). The **1/day AI scan was
+NOT used** — preserved for the next working run. Saturday is educational anyway, so no scan was needed.
+
+**Owner alert:** no matching Postiz-blocker draft exists in the connected Gmail account
+(donko.tonev@edited.com); the earlier run's draft was reportedly saved to a different account
+(donkotonew@gmail.com = ALERT_EMAIL). This run is interactive, so the blocker was reported directly to
+the owner in the session summary (most direct channel); no redundant email sent (org-approval block +
+owner is present). errors.md updated and committed/pushed so the alert also surfaces on GitHub.
+
+**Action required (unchanged across all 4 runs):** owner (1) renews the Postiz subscription and (2)
+updates `POSTIZ_API_KEY` in `/home/ubuntu/pulsify-marketing/.env`, then confirms with
+`postiz auth:status` (should report credentials OK) — then publishing resumes automatically on the next
+run. Memory note `postiz-subscription-expired.md` kept (delete only when auth:status reports OK).
+Secondary (still open): `mail` binary not installed (`sudo apt install mailutils`) so run.sh's own email
+alert has never worked — GitHub (errors.md) remains the reliable surfacing channel.
+
+---
+
 ## 2026-11-28 (Sat 00:37 Sofia / Fri 22:37 UTC) — WEEKLY LONG YOUTUBE VIDEO (longform.sh): SKIPPED — Postiz still expired, cannot upload
 
 **Run:** longform (longform.sh, Sat 00:37 Sofia = Fri 22:37 UTC). This is the **first-ever longform slot** (the
