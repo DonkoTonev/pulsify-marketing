@@ -27,7 +27,8 @@ NOT used** — preserved for the next working run. Saturday is educational anywa
 (donko.tonev@edited.com); the earlier run's draft was reportedly saved to a different account
 (donkotonew@gmail.com = ALERT_EMAIL). This run is interactive, so the blocker was reported directly to
 the owner in the session summary (most direct channel); no redundant email sent (org-approval block +
-owner is present). errors.md updated and committed/pushed so the alert also surfaces on GitHub.
+owner is present). errors.md updated (NOTE: errors.md is gitignored = local-only, so it does NOT
+reach GitHub; this log.md entry is what's committed+pushed and surfaces the blocker on GitHub).
 
 **Action required (unchanged across all 4 runs):** owner (1) renews the Postiz subscription and (2)
 updates `POSTIZ_API_KEY` in `/home/ubuntu/pulsify-marketing/.env`, then confirms with
